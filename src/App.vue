@@ -16,8 +16,19 @@ export default {
 
 <style>
 @import url('https://necolas.github.io/normalize.css/7.0.0/normalize.css');
+@font-face {
+  font-family: Beaufort;
+  src: url('../static/Beaufort.ttf');
+}
+
+@font-face {
+    font-family: Beaufort;
+    src: url('../static/Beaufort-bold.ttf');
+    font-weight: bold;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: Beaufort, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
