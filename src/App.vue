@@ -23,7 +23,7 @@ export default {
 
 @font-face {
     font-family: Beaufort;
-    src: url('../static/Beaufort-bold.ttf');
+    src: url('../static/Beaufort-Bold.ttf');
     font-weight: bold;
 }
 

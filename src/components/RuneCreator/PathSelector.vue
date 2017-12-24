@@ -3,7 +3,6 @@
 
     <div class="path-category">
       <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Precision/glow-p.png" alt="">      
-      <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/lines.png">
       <div>
         <div class="path-top">
           <div class="path-image">
@@ -34,7 +33,6 @@
     </div>
     <div class="path-category">
       <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Domination/glow-d.png" alt="">
-      <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/lines.png">
       <div>
         <div class="path-top">
           <div class="path-image">
@@ -65,7 +63,6 @@
     </div>
     <div class="path-category">
       <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Sorcery/glow-s.png" alt="">
-      <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/lines.png">
       <div>
         <div class="path-top">
           <div class="path-image">
@@ -96,7 +93,6 @@
     </div>
     <div class="path-category">
       <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Resolve/glow-r.png" alt="">
-      <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/lines.png">
       <div>
         <div class="path-top">
           <div class="path-image">
@@ -127,7 +123,6 @@
     </div>
     <div class="path-category">
       <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Inspiration/glow-i.png" alt="">
-      <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/lines.png">
       <div>
         <div class="path-top">
           <div class="path-image">
@@ -185,14 +180,18 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+    background: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/lines.png');
+    background-repeat: no-repeat;
+    background-position: top center;
 
     >img {
+      top: 0;
+      left: 0;
       position: absolute;
       height: 100%;
       width: 100%;
-      filter: brightness(30%);
-      z-index: 1;
       cursor: pointer;
+      filter: brightness(50%);
 
       &:hover {
         filter: brightness(100%);
@@ -203,7 +202,7 @@
       height: 75%;
 
       .path-top {
-            height: 30%;
+            height: 25%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -238,7 +237,7 @@
           }
 
           .path-bottom {
-            height: 50%;
+            height: 55%;
             display: flex;
             flex-direction: column;
             justify-content: center;
