@@ -65,14 +65,10 @@
 <style lang="scss">
 .path-category {
     width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: relative;
     background: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/lines.png');
     background-repeat: no-repeat;
     background-position: top center;
-
     >img {
       top: 0;
       left: 0;
@@ -82,8 +78,9 @@
     }
 
     >div {
-      height: 75%;
-
+      position: absolute;
+      top: 15%;
+      height: 85%;
       .path-top {
             height: 20%;
             display: flex;
@@ -164,6 +161,8 @@
 
           .path-footer {
             height: 20%;
+            width: 80%;
+            margin: 0 auto;
           }
     }
   }
