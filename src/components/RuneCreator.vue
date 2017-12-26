@@ -43,7 +43,8 @@ export default {
     .black-background {
       width: 100%;
       height: 100%;
-      background: black;
+      background: #020b0e;
+      z-index: 0;
     }
   }
 }

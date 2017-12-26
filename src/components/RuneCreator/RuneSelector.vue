@@ -1,6 +1,9 @@
 <template>
-  <div class="rune-selector" :style="{ background: 'url(' + getBackgroundImg + ')' }">
+  <div class="rune-selector">
     <back-button/>
+    <div class="backdrop">
+      <img :src="getBackgroundImg">
+    </div>
     <div class="rune-builder">
       <div class="primary-runes">
         This is the left side
@@ -32,7 +35,26 @@
   height: 100%;
   position: relative;
 
-  .rune-builder{
+  .backdrop {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 0;
+    user-select: none;
+    will-change: transform;
+    overflow: hidden;
+    transition: 0.3s;
+
+    >img {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+  }
+
+  .rune-builder {
     width: 66%;
     height: 100%;
     display: flex;
@@ -42,11 +64,14 @@
     .primary-runes {
       width: 50%;
       border: 1px solid white;
+      z-index: 1;
+      
     }
 
     .secondary-runes {
       width: 50%;
       border: 1px solid white;
+      z-index: 1;
     }
   }
 }
