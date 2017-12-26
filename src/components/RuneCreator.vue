@@ -27,15 +27,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .rune-creator {
-  width: 66%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   .runes {
-    width: calc(1029px);
-    height: calc(591px);
+    width: 1029px;
+    height: 591px;
     background: linear-gradient(0deg, #6c5021 0%, #ab8f57 100%);
     box-shadow: 0 0 80px #000;
     padding: 2px;
