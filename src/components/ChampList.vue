@@ -13,6 +13,6 @@
 <style scoped>
 .champList {
   border: 1px solid white;
-  width: 30%;
+  width: 34%;
 }
 </style>

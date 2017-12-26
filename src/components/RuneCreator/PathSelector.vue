@@ -1,165 +1,148 @@
 <template>
   <div class="path-selector">
-
-    <div class="path-category">
-      <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Precision/glow-p.png" alt="">      
-      <div>
-        <div class="path-top">
-          <div class="path-image">
-            <img src="../../assets/precision/precision.png" alt="asdf">
-          </div>
-        </div>
-        <div class="path-middle">
-          <span class="path-title">Precision</span>
-          <span class="path-subtitle">Become a Legend</span>
-        </div>
-        <div class="path-bottom">
-          <div class="keystones">
-            <div class="icon" id="icon-1" @click="checkClick">
-              <img src="../../assets/precision/keystones/PressTheAttack.png" alt="">            
-            </div>
-            <div class="icon" id="icon-2">
-              <img src="../../assets/precision/keystones/LethalTempo.png" alt="">            
-            </div>
-            <div class="icon" id="icon-3">
-              <img src="../../assets/precision/keystones/FleetFootwork.png" alt="">            
-            </div>
-          </div>
-        </div>
-        <div class="path-footer">
-          Improved attacks and sustained damage
-        </div>
-      </div>      
-    </div>
-    <div class="path-category">
-      <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Domination/glow-d.png" alt="">
-      <div>
-        <div class="path-top">
-          <div class="path-image">
-            <img src="../../assets/domination/domination.png" alt="asdf">
-          </div>
-        </div>
-        <div class="path-middle">
-          <span class="path-title">Domination</span>
-          <span class="path-subtitle">Hunt and Eliminate Prey</span>
-        </div>
-        <div class="path-bottom">
-          <div class="keystones">
-            <div class="icon" id="icon-1">
-              <img src="../../assets/domination/keystones/Electrocute.png" alt="">            
-            </div>
-            <div class="icon" id="icon-2">
-              <img src="../../assets/domination/keystones/Predator.png" alt="">            
-            </div>
-            <div class="icon" id="icon-3">
-              <img src="../../assets/domination/keystones/DarkHarvest.png" alt="">            
-            </div>
-          </div>
-        </div>
-        <div class="path-footer">
-          Burst damage and target access
-        </div>
-      </div>
-    </div>
-    <div class="path-category">
-      <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Sorcery/glow-s.png" alt="">
-      <div>
-        <div class="path-top">
-          <div class="path-image">
-            <img src="../../assets/sorcery/sorcery.png" alt="asdf">
-          </div>
-        </div>
-        <div class="path-middle">
-          <span class="path-title">Sorcery</span>
-          <span class="path-subtitle">Unleash Destruction</span>
-        </div>
-        <div class="path-bottom">
-          <div class="keystones">
-            <div class="icon" id="icon-1">
-              <img src="../../assets/sorcery/keystones/SummonAerie.png" alt="">            
-            </div>
-            <div class="icon" id="icon-2">
-              <img src="../../assets/sorcery/keystones/ArcaneComet.png" alt="">            
-            </div>
-            <div class="icon" id="icon-3">
-              <img src="../../assets/sorcery/keystones/PhaseRush.png" alt="">            
-            </div>
-          </div>
-        </div>
-        <div class="path-footer">
-          Empowered abilities and resource manipulation
-        </div>
-      </div>      
-    </div>
-    <div class="path-category">
-      <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Resolve/glow-r.png" alt="">
-      <div>
-        <div class="path-top">
-          <div class="path-image">
-            <img src="../../assets/resolve/resolve.png" alt="asdf">
-          </div>
-        </div>
-        <div class="path-middle">
-          <span class="path-title">Resolve</span>
-          <span class="path-subtitle">Live Forever</span>
-        </div>
-        <div class="path-bottom">
-          <div class="keystones">
-            <div class="icon" id="icon-1">
-              <img src="../../assets/resolve/keystones/GraspOfTheUndying.png" alt="">            
-            </div>
-            <div class="icon" id="icon-2">
-              <img src="../../assets/resolve/keystones/Guardian.png" alt="">            
-            </div>
-            <div class="icon" id="icon-3">
-              <img src="../../assets/resolve/keystones/Aftershock.png" alt="">            
-            </div>
-          </div>
-        </div>
-        <div class="path-footer">
-          Durability and crowd control
-        </div>
-      </div>
-    </div>
-    <div class="path-category">
-      <img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Inspiration/glow-i.png" alt="">
-      <div>
-        <div class="path-top">
-          <div class="path-image">
-            <img src="../../assets/inspiration/inspiration.png" alt="asdf">
-          </div>
-        </div>
-        <div class="path-middle">
-          <span class="path-title">Inspiration</span>
-          <span class="path-subtitle">Outwit mere mortals</span>
-        </div>
-        <div class="path-bottom">
-          <div class="keystones">
-            <div class="icon" id="icon-1">
-              <img src="../../assets/inspiration/keystones/GlacialAugment.png" alt="">            
-            </div>
-            <div class="icon" id="icon-2">
-              <img src="../../assets/inspiration/keystones/UnsealedSpellbook.png" alt="">            
-            </div>
-            <div class="icon" id="icon-3">
-              <img src="../../assets/inspiration/keystones/Kleptomancy.png" alt="">            
-            </div>
-          </div>
-        </div>
-        <div class="path-footer">
-          Durability and crowd control
-        </div>
-      </div>
-    </div>    
+    <path-category  v-for="(path, index) in paths" :category="path" :key="index"></path-category>
   </div>
 </template>
 
 <script>
+  import PathCategory from './PathCategory/PathCategory'
   export default {
     name: 'PathSelector',
-    methods: {
-      checkClick: function () {
-        console.log('you clicked')
+    components: { PathCategory },
+    data () {
+      return {
+        paths: [
+          {
+            glowImg: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Precision/glow-p.png',
+            pathImg: '/static/precision/precision.png',
+            ringImg: '/static/precision/vfx-ring.png',
+            pathTitle: 'Precision',
+            pathId: 8000,
+            pathSubtitle: 'Become a Legend',
+            keystoneImgs: [
+              {
+                imgSrc: '/static/precision/keystones/PressTheAttack.png',
+                keystoneName: 'Press The Attack',
+                keystoneId: 8005
+              },
+              {
+                imgSrc: '/static/precision/keystones/FleetFootwork.png',
+                keystoneName: 'Fleet Footwork',
+                keystoneId: 8021
+              },
+              {
+                imgSrc: '/static/precision/keystones/LethalTempo.png',
+                keystoneName: 'Lethal Tempo',
+                keystoneId: 8008
+              }
+            ],
+            footer: 'Improved attacks and sustained damage'
+          },
+          {
+            glowImg: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Domination/glow-d.png',
+            pathImg: '/static/domination/domination.png',
+            ringImg: '/static/domination/vfx-ring.png',
+            pathTitle: 'Domination',
+            pathId: 8100,
+            pathSubtitle: 'Hunt and Eliminate Prey',
+            keystoneImgs: [
+              {
+                imgSrc: '/static/domination/keystones/Electrocute.png',
+                keystoneName: 'Electrocute',
+                keystoneId: 8112
+              },
+              {
+                imgSrc: '/static/domination/keystones/DarkHarvest.png',
+                keystoneName: 'Dark Harvest',
+                keystoneId: 8128
+              },
+              {
+                imgSrc: '/static/domination/keystones/Predator.png',
+                keystoneName: 'Predator',
+                keystoneId: 8124
+              }
+            ],
+            footer: 'Burst damage and target access'
+          },
+          {
+            glowImg: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Sorcery/glow-s.png',
+            pathImg: '/static/sorcery/sorcery.png',
+            ringImg: '/static/sorcery/vfx-ring.png',
+            pathTitle: 'Sorcery',
+            pathId: 8200,
+            pathSubtitle: 'Unleash Destruction',
+            keystoneImgs: [
+              {
+                imgSrc: '/static/sorcery/keystones/SummonAerie.png',
+                keystoneName: 'Summoner Aerie',
+                keystoneId: 8214
+              },
+              {
+                imgSrc: '/static/sorcery/keystones/PhaseRush.png',
+                keystoneName: 'Phase Rush',
+                keystoneId: 8230
+              },
+              {
+                imgSrc: '/static/sorcery/keystones/ArcaneComet.png',
+                keystoneName: 'Arcane Comet',
+                keystoneId: 8229
+              }
+            ],
+            footer: 'Empowered abilities and resource manipulation'
+          },
+          {
+            glowImg: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Resolve/glow-r.png',
+            pathImg: '/static/resolve/resolve.png',
+            ringImg: '/static/resolve/vfx-ring.png',
+            pathTitle: 'Resolve',
+            pathId: 8400,
+            pathSubtitle: 'Live Forever',
+            keystoneImgs: [
+              {
+                imgSrc: '/static/resolve/keystones/GraspOfTheUndying.png',
+                keystoneName: 'Grasp Of The Undying',
+                keystoneId: 8439
+              },
+              {
+                imgSrc: '/static/resolve/keystones/Guardian.png',
+                keystoneName: 'Guardian',
+                keystoneId: 8465
+              },
+              {
+                imgSrc: '/static/resolve/keystones/Aftershock.png',
+                keystoneName: 'Aftershock',
+                keystoneId: 8437
+              }
+            ],
+            footer: 'Durability and crowd control'
+          },
+          {
+            glowImg: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Inspiration/glow-i.png',
+            pathImg: '/static/inspiration/inspiration.png',
+            ringImg: '/static/inspiration/vfx-ring.png',
+            pathTitle: 'Inspiration',
+            pathId: 8300,
+            pathSubtitle: 'Outwit mere mortals',
+            keystoneImgs: [
+              {
+                imgSrc: '/static/inspiration/keystones/Kleptomancy.png',
+                keystoneName: 'Kleptomancy',
+                keystoneId: 8359
+              },
+              {
+                imgSrc: '/static/inspiration/keystones/UnsealedSpellbook.png',
+                keystoneName: 'Unsealed Spellbook',
+                keystoneId: 8326
+              },
+              {
+                imgSrc: '/static/inspiration/keystones/GlacialAugment.png',
+                keystoneName: 'Glacial Augment',
+                keystoneId: 8351
+              }
+            ],
+            footer: 'Creative tools and rule bending'
+          }
+        ]
       }
     }
   }
@@ -173,108 +156,5 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-
-  .path-category {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    background: url('https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/lines.png');
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    >img {
-      top: 0;
-      left: 0;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      cursor: pointer;
-      filter: brightness(50%);
-
-      &:hover {
-        filter: brightness(100%);
-      }
-    }
-
-    >div {
-      height: 75%;
-
-      .path-top {
-            height: 25%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            .path-image {
-              background: url('http://d181w3hxxigzvh.cloudfront.net/wp-content/themes/rune_forge/imgs/rune-paths/ring.png');
-              background-repeat: no-repeat;
-              background-position: center center;
-              cursor: pointer;
-
-              img {
-                max-width: 100%;
-              }
-            }
-          }
-
-
-          .path-middle {
-            height: 10%;
-            text-transform: uppercase;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            .path-title {
-              margin-bottom: 5px;
-              font-size: 1.3rem;
-            }
-            .path-subtitle {
-              font-size: .8rem;
-            }
-          }
-
-          .path-bottom {
-            height: 55%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .keystones {
-              height: 66%;
-              display: flex;
-              flex-wrap: wrap;
-              align-items: center;
-              justify-content: space-between;
-
-              .icon {
-                flex: 0 auto auto;
-                height: 50%;
-                img {
-                  max-height: 100%;
-                  max-width: 100%;
-                }
-              }
-
-              #icon-1 {
-                width: 50%;
-              }
-              #icon-2 {
-                width: 50%;          
-              }
-
-              #icon-3 {
-                width: 100%;
-              }
-            }
-          }
-
-          .path-footer {
-            height: 10%;
-          }
-    }
-    
-  }
 }
 </style>

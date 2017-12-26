@@ -16,6 +16,7 @@ export default {
 
 <style>
 @import url('https://necolas.github.io/normalize.css/7.0.0/normalize.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @font-face {
   font-family: Beaufort;
   src: url('../static/Beaufort.ttf');
