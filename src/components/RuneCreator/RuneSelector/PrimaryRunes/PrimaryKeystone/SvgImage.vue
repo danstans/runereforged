@@ -1,7 +1,7 @@
 <template>
-  <div class="svg-img">
-    <div class="svgs" @mouseover="showHover = true" @mouseout="showHover = false">
-      <img :src="getKeystoneSelected.imgSrc" alt="" v-if="getKeystoneSelected">      
+  <div class="svg-img" @mouseover="showHover = true" @mouseout="showHover = false" @click="toggleClicked()">
+    <img class="keystone-img" :class="{'keystone-img-small': toggleSize}" :src="getKeystoneSelected.imgSrc" alt="" v-if="getKeystoneSelected">          
+    <div class="svgs">
       <svg class="svg-hover-frame" viewBox="0 0 60 60" size="large" v-if="showHover">
         <linearGradient id="keystone-gradient-fade" x1="0" y1="0" x2="0" y2="0">
             <stop stop-opacity=".5" offset="0%" :stop-color="getPrimaryColor"></stop>
@@ -14,7 +14,7 @@
         </linearGradient>
         <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#keystone-gradient)"></circle>
       </svg>
-      <svg class="svg-spinner">
+      <svg class="svg-spinner" v-if="toggleSize">
         <linearGradient id="gradient-white-transparent" x1="0" y1="0" x2="0" y2="1">
           <stop stop-opacity="1" stop-color="#fff" offset="0%"></stop><stop stop-opacity="0" stop-color="#fff" offset="100%"></stop>
         </linearGradient>
@@ -29,6 +29,7 @@
   import { mapGetters } from 'vuex'
   export default {
     name: 'SvgImage',
+    props: [ 'toggleSize' ],
     computed: {
       ...mapGetters([
         'getPrimaryColor',
@@ -38,6 +39,11 @@
     data () {
       return {
         showHover: false
+      }
+    },
+    methods: {
+      toggleClicked: function () {
+        this.$emit('toggleClicked')
       }
     }
   }
@@ -53,6 +59,14 @@
   justify-content: center;
   align-items: center;
 
+    .keystone-img {
+      max-width: 100%;
+      max-height: 100%;
+      cursor: pointer;
+      position: absolute;
+      z-index: 1;
+    }
+
   .svgs {
     display: block;
     background: #1e2328;
@@ -63,12 +77,6 @@
     width: 62px;
     height: 62px;
     cursor: pointer;
-
-    >img {
-      max-width: 100%;
-      max-height: 100%;
-      position: absolute;
-    }
 
     .svg-hover-frame {
       position: absolute;
@@ -100,6 +108,11 @@
       animation: key-rotation 2s linear forwards infinite;
     }
   }
+}
+
+.keystone-img-small {
+  height: 70%;
+  width: 70%;
 }
 
 @-webkit-keyframes key-rotation {

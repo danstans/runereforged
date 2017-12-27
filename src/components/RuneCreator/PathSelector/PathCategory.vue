@@ -2,7 +2,7 @@
   <div class="path-category" @mouseover="mouseOver = true" @mouseout="mouseOver = false">
     <img :src="category.glowImg" :class="{'full-brightness': !mouseOver, 'half-brightness': mouseOver }" alt="">
     <div class="centered-category">
-      <div class="path-top" @click="selectPath(category.pathId, category.keystoneImgs)">
+      <div class="path-top" @click="selectPath(category.pathId, category.keystones)">
         <div class="before path-image ring" v-if="!mouseOver" >
           <img :src="category.pathImg" alt="">
         </div>
@@ -16,14 +16,14 @@
       </div>
       <div class="path-bottom">
         <div class="keystones">
-          <div class="icon" id="icon-1" @click="selectKeystone(category.pathId, category.keystoneImgs[0].keystoneId)">
-            <img :src="category.keystoneImgs[0].imgSrc" alt="" :title="category.keystoneImgs[0].keystoneName">            
+          <div class="icon" id="icon-1" @click="clickKeystone(category.pathId, category.keystones, category.keystones[0])">
+            <img :src="category.keystones[0].imgSrc" alt="" :title="category.keystones[0].keystoneName">            
           </div>
-          <div class="icon" id="icon-2" @click="selectKeystone(category.pathId, category.keystoneImgs[1].keystoneId)">
-            <img :src="category.keystoneImgs[1].imgSrc" alt="" :title="category.keystoneImgs[1].keystoneName">            
+          <div class="icon" id="icon-2" @click="clickKeystone(category.pathId, category.keystones, category.keystones[1])">
+            <img :src="category.keystones[1].imgSrc" alt="" :title="category.keystones[1].keystoneName">            
           </div>
-          <div class="icon" id="icon-3" @click="selectKeystone(category.pathId, category.keystoneImgs[2].keystoneId)">
-            <img :src="category.keystoneImgs[2].imgSrc" alt="" :title="category.keystoneImgs[2].keystoneName">            
+          <div class="icon" id="icon-3" @click="clickKeystone(category.pathId, category.keystones, category.keystones[2])">
+            <img :src="category.keystones[2].imgSrc" alt="" :title="category.keystones">            
           </div>
         </div>
       </div>
@@ -43,17 +43,19 @@
       ...mapActions([
         'changePathSelected',
         'changePrimaryPath',
-        'updatePossibleKeystones'
+        'updatePossibleKeystones',
+        'selectKeystone'
       ]),
       selectPath: function (pathId, keystones) {
         this.changePathSelected({pathVal: true})
         this.changePrimaryPath({pathId: pathId})
         this.updatePossibleKeystones({keystones: keystones})
-        console.log(`Setting Path id to ${pathId}`)
       },
-      selectKeystone: function (pathId, keystoneId) {
-        console.log(`Setting Path id to ${pathId}`)
-        console.log(`setting the keystone and ID to ${keystoneId}`)
+      clickKeystone: function (pathId, keystones, keystone) {
+        this.changePathSelected({pathVal: true})
+        this.changePrimaryPath({pathId: pathId})
+        this.selectKeystone({keystone: keystone})
+        this.updatePossibleKeystones({keystone: keystones})
       }
     },
     data () {

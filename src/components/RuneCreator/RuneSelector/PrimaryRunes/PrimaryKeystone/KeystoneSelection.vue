@@ -29,6 +29,7 @@
       ]),
       clickKeystone: function (keystone) {
         this.selectKeystone({keystone: keystone})
+        this.$emit('toggleClicked', false)
       }
     }
   }
