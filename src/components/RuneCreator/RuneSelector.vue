@@ -5,12 +5,8 @@
       <img :src="getBackgroundImg">
     </div>
     <div class="rune-builder">
-      <div class="primary-runes">
-        This is the left side
-      </div>
-      <div class="secondary-runes">
-        This is the right side
-      </div>
+      <primary-runes></primary-runes>
+      <secondary-runes></secondary-runes>
     </div>
   </div>
 </template>
@@ -18,9 +14,11 @@
 <script>
   import { mapGetters } from 'vuex'
   import BackButton from './RuneSelector/BackButton'
+  import PrimaryRunes from './RuneSelector/PrimaryRunes'
+  import SecondaryRunes from './RuneSelector/SecondaryRunes'
   export default {
     name: 'RuneSelector',
-    components: { BackButton },
+    components: { BackButton, PrimaryRunes, SecondaryRunes },
     computed: {
       ...mapGetters([
         'getBackgroundImg'
@@ -59,19 +57,13 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    
-    .primary-runes {
-      width: 50%;
-      border: 1px solid white;
-      z-index: 1;
-      
-    }
+    justify-content: center;
 
     .secondary-runes {
-      width: 50%;
-      border: 1px solid white;
+      width: calc(50% - 20px);
+      height: calc(100% - 60px);
       z-index: 1;
+      align-self: center;
     }
   }
 }

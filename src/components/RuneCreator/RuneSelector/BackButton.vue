@@ -12,10 +12,12 @@
     name: 'BackButton',
     methods: {
       ...mapActions([
-        'resetState'
+        'resetState',
+        'resetKeystone'
       ]),
       reset: function () {
         this.resetState()
+        this.resetKeystone()
       }
     }
   }

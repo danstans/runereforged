@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import PathCategory from './PathCategory/PathCategory'
+  import PathCategory from './PathSelector/PathCategory'
   export default {
     name: 'PathSelector',
     components: { PathCategory },
@@ -23,16 +23,19 @@
               {
                 imgSrc: '/static/precision/keystones/PressTheAttack.png',
                 keystoneName: 'Press The Attack',
+                keystoneDescription: 'Hitting an enemy champion 3 consecutive times makes them vulnerable.',
                 keystoneId: 8005
               },
               {
                 imgSrc: '/static/precision/keystones/FleetFootwork.png',
                 keystoneName: 'Fleet Footwork',
+                keystoneDescription: 'Attacking and moving builds Energy stacks. At 100 stacks, your next',
                 keystoneId: 8021
               },
               {
                 imgSrc: '/static/precision/keystones/LethalTempo.png',
                 keystoneName: 'Lethal Tempo',
+                keystoneDescription: '1.5s after damaging a champion gain a large amount of attack s',
                 keystoneId: 8008
               }
             ],
@@ -49,16 +52,19 @@
               {
                 imgSrc: '/static/domination/keystones/Electrocute.png',
                 keystoneName: 'Electrocute',
+                keystoneDescription: 'Hitting a champion with 3 separate attacks or abilities in 3s deals bonus damage',
                 keystoneId: 8112
               },
               {
                 imgSrc: '/static/domination/keystones/DarkHarvest.png',
                 keystoneName: 'Dark Harvest',
+                keystoneDescription: 'Champions, large minions, and large monsters drop soul essence on d',
                 keystoneId: 8128
               },
               {
                 imgSrc: '/static/domination/keystones/Predator.png',
                 keystoneName: 'Predator',
+                keystoneDescription: 'Add an active effect to your boots that grants a large boost of MS an…',
                 keystoneId: 8124
               }
             ],
@@ -75,16 +81,19 @@
               {
                 imgSrc: '/static/sorcery/keystones/SummonAerie.png',
                 keystoneName: 'Summoner Aerie',
+                keystoneDescription: 'Your attacks and abilities send Aery to a target, damaging enemies or …',
                 keystoneId: 8214
               },
               {
                 imgSrc: '/static/sorcery/keystones/PhaseRush.png',
                 keystoneName: 'Phase Rush',
+                keystoneDescription: 'Hitting an enemy champion with 3 separate attacks or abilities grant…',
                 keystoneId: 8230
               },
               {
                 imgSrc: '/static/sorcery/keystones/ArcaneComet.png',
                 keystoneName: 'Arcane Comet',
+                keystoneDescription: 'Damaging a champion with an ability hurls a damaging comet at their lo…',
                 keystoneId: 8229
               }
             ],
@@ -101,16 +110,19 @@
               {
                 imgSrc: '/static/resolve/keystones/GraspOfTheUndying.png',
                 keystoneName: 'Grasp Of The Undying',
+                keystoneDescription: 'Every 4s your next attack on a champion deals bonus magic dam…',
                 keystoneId: 8439
               },
               {
                 imgSrc: '/static/resolve/keystones/Guardian.png',
                 keystoneName: 'Guardian',
+                keystoneDescription: 'Guard allies you cast spells on and those that are very nearby. If you…',
                 keystoneId: 8465
               },
               {
                 imgSrc: '/static/resolve/keystones/Aftershock.png',
                 keystoneName: 'Aftershock',
+                keystoneDescription: 'After immobilizing an enemy champion gain defenses and late…',
                 keystoneId: 8437
               }
             ],
@@ -127,16 +139,19 @@
               {
                 imgSrc: '/static/inspiration/keystones/Kleptomancy.png',
                 keystoneName: 'Kleptomancy',
+                keystoneDescription: 'Your first attack after using an ability grants gold and sometimes …',
                 keystoneId: 8359
               },
               {
                 imgSrc: '/static/inspiration/keystones/UnsealedSpellbook.png',
                 keystoneName: 'Unsealed Spellbook',
+                keystoneDescription: 'Get Summoner Shards and exchange them at the shop to ch…',
                 keystoneId: 8326
               },
               {
                 imgSrc: '/static/inspiration/keystones/GlacialAugment.png',
                 keystoneName: 'Glacial Augment',
+                keystoneDescription: 'Your first attack against an enemy champion slows them (per unit c…',
                 keystoneId: 8351
               }
             ],

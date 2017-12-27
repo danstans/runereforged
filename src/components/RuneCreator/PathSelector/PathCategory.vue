@@ -2,7 +2,7 @@
   <div class="path-category" @mouseover="mouseOver = true" @mouseout="mouseOver = false">
     <img :src="category.glowImg" :class="{'full-brightness': !mouseOver, 'half-brightness': mouseOver }" alt="">
     <div class="centered-category">
-      <div class="path-top" @click="selectPath(category.pathId)">
+      <div class="path-top" @click="selectPath(category.pathId, category.keystoneImgs)">
         <div class="before path-image ring" v-if="!mouseOver" >
           <img :src="category.pathImg" alt="">
         </div>
@@ -42,11 +42,13 @@
     methods: {
       ...mapActions([
         'changePathSelected',
-        'changePrimaryPath'
+        'changePrimaryPath',
+        'updatePossibleKeystones'
       ]),
-      selectPath: function (pathId) {
+      selectPath: function (pathId, keystones) {
         this.changePathSelected({pathVal: true})
         this.changePrimaryPath({pathId: pathId})
+        this.updatePossibleKeystones({keystones: keystones})
         console.log(`Setting Path id to ${pathId}`)
       },
       selectKeystone: function (pathId, keystoneId) {
