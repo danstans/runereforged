@@ -1,5 +1,5 @@
 <template>
-  <div class="primary-runes">
+  <div class="primary-runes" :style="{color: getPrimaryColor}">
     <primary-path></primary-path>
     <primary-keystone></primary-keystone>
     <primary-tier v-for="(rune, index) in getPossibleRunes.runes" :possibleRunes="rune" :tierLevel="index" :key="index" />
@@ -16,7 +16,8 @@
     components: { PrimaryPath, PrimaryKeystone, PrimaryTier },
     computed: {
       ...mapGetters([
-        'getPossibleRunes'
+        'getPossibleRunes',
+        'getPrimaryColor'
       ])
     }
   }
@@ -30,6 +31,5 @@
   height: calc(100% - 60px);
   z-index: 1;
   align-self: center;      
-  color: #a09b8c;
 }
 </style>

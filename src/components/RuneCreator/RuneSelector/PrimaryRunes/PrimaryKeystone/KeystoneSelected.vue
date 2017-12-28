@@ -27,8 +27,8 @@
 .keystone-information {
   flex-grow: 1;
   width: 60%;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 65px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -37,12 +37,13 @@
   .keystone-name {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .keystone-short {
     font-size: 13px;
     height: 10%;
+    color: #a09b8c;
     font-family: 'Roboto', sans-serif;
   }
 }

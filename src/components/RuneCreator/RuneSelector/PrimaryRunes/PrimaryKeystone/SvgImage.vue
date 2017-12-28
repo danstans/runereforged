@@ -14,7 +14,7 @@
         </linearGradient>
         <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#keystone-gradient)"></circle>
       </svg>
-      <svg class="svg-spinner" v-if="toggleSize">
+      <svg class="svg-spinner" v-if="(toggleSize || (!toggleSize && !getKeystoneSelected))">
         <linearGradient id="gradient-white-transparent" x1="0" y1="0" x2="0" y2="1">
           <stop stop-opacity="1" stop-color="#fff" offset="0%"></stop><stop stop-opacity="0" stop-color="#fff" offset="100%"></stop>
         </linearGradient>

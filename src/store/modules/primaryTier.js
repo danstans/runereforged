@@ -1,3 +1,5 @@
+import Vue from 'vue'
+
 const state = {
   tierRunes: [],
   possibleRunes: null
@@ -17,10 +19,10 @@ const mutations = {
     state.possibleRunes = possibleRunes
   },
   MUTATE_TIER_RUNES: function (state, payload) {
-    state.tierRunes[payload.tier] = payload.runes
+    Vue.set(state.tierRunes, payload.tier, payload.runes)
   },
   RESET_TIER: function (state) {
-    state.tierRunes = [false, false, false]
+    state.tierRunes = []
     state.possibleRunes = null
   }
 }
@@ -33,6 +35,7 @@ const actions = {
     context.commit('MUTATE_TIER_RUNES', payload)
   },
   resetTier: function (context) {
+    console.log('you are resetting the tier')
     context.commit('RESET_TIER')
   }
 }

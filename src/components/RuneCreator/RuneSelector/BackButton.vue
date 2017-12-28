@@ -13,11 +13,13 @@
     methods: {
       ...mapActions([
         'resetState',
-        'resetKeystone'
+        'resetKeystone',
+        'resetTier'
       ]),
       reset: function () {
         this.resetState()
         this.resetKeystone()
+        this.resetTier()
       }
     }
   }
