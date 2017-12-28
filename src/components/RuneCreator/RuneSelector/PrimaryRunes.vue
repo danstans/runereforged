@@ -2,9 +2,7 @@
   <div class="primary-runes">
     <primary-path></primary-path>
     <primary-keystone></primary-keystone>
-    <primary-tier></primary-tier>
-    <primary-tier></primary-tier>
-    <primary-tier></primary-tier>
+    <primary-tier v-for="(rune, index) in getPossibleRunes.runes" :possibleRunes="rune" :tierLevel="index" :key="index" />
   </div>
 </template>
 
@@ -12,9 +10,15 @@
   import PrimaryPath from './PrimaryRunes/PrimaryPath'
   import PrimaryKeystone from './PrimaryRunes/PrimaryKeystone'
   import PrimaryTier from './PrimaryRunes/PrimaryTier'
+  import { mapGetters } from 'vuex'
   export default {
     name: 'PrimaryRunes',
-    components: { PrimaryPath, PrimaryKeystone, PrimaryTier }
+    components: { PrimaryPath, PrimaryKeystone, PrimaryTier },
+    computed: {
+      ...mapGetters([
+        'getPossibleRunes'
+      ])
+    }
   }
 </script>
 

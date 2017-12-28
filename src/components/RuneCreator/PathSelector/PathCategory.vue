@@ -2,7 +2,7 @@
   <div class="path-category" @mouseover="mouseOver = true" @mouseout="mouseOver = false">
     <img :src="category.glowImg" :class="{'full-brightness': !mouseOver, 'half-brightness': mouseOver }" alt="">
     <div class="centered-category">
-      <div class="path-top" @click="selectPath(category.pathId, category.keystones)">
+      <div class="path-top" @click="selectPath(category.pathId, category.keystones, category.runeTiers)">
         <div class="before path-image ring" v-if="!mouseOver" >
           <img :src="category.pathImg" alt="">
         </div>
@@ -16,13 +16,13 @@
       </div>
       <div class="path-bottom">
         <div class="keystones">
-          <div class="icon" id="icon-1" @click="clickKeystone(category.pathId, category.keystones, category.keystones[0])">
+          <div class="icon" id="icon-1" @click="clickKeystone(category.pathId, category.keystones, category.keystones[0], category.runeTiers)">
             <img :src="category.keystones[0].imgSrc" alt="" :title="category.keystones[0].keystoneName">            
           </div>
-          <div class="icon" id="icon-2" @click="clickKeystone(category.pathId, category.keystones, category.keystones[1])">
+          <div class="icon" id="icon-2" @click="clickKeystone(category.pathId, category.keystones, category.keystones[1], category.runeTiers)">
             <img :src="category.keystones[1].imgSrc" alt="" :title="category.keystones[1].keystoneName">            
           </div>
-          <div class="icon" id="icon-3" @click="clickKeystone(category.pathId, category.keystones, category.keystones[2])">
+          <div class="icon" id="icon-3" @click="clickKeystone(category.pathId, category.keystones, category.keystones[2], category.runeTiers)">
             <img :src="category.keystones[2].imgSrc" alt="" :title="category.keystones">            
           </div>
         </div>
@@ -44,18 +44,21 @@
         'changePathSelected',
         'changePrimaryPath',
         'updatePossibleKeystones',
-        'selectKeystone'
+        'selectKeystone',
+        'updatePossibleRunes'
       ]),
-      selectPath: function (pathId, keystones) {
+      selectPath: function (pathId, keystones, runetiers) {
         this.changePathSelected({pathVal: true})
         this.changePrimaryPath({pathId: pathId})
         this.updatePossibleKeystones({keystones: keystones})
+        this.updatePossibleRunes({runes: runetiers})
       },
-      clickKeystone: function (pathId, keystones, keystone) {
+      clickKeystone: function (pathId, keystones, keystone, runetiers) {
         this.changePathSelected({pathVal: true})
         this.changePrimaryPath({pathId: pathId})
         this.selectKeystone({keystone: keystone})
         this.updatePossibleKeystones({keystone: keystones})
+        this.updatePossibleRunes({runes: runetiers})
       }
     },
     data () {

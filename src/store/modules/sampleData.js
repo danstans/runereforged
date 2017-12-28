@@ -212,7 +212,7 @@ const state = {
         [
           {
             runeName: 'Transcendence',
-            runeImg: '/static/sorcery/t2/Trascendence.png',
+            runeImg: '/static/sorcery/t2/Transcendence.png',
             runeDescription: 'Takedowns on enemies grant permanent Attack Speed.'
           },
           {
@@ -234,7 +234,7 @@ const state = {
           },
           {
             runeName: 'Water Walking',
-            runeImg: '/static/sorcery/t3/WaterWalking.png',
+            runeImg: '/static/sorcery/t3/Waterwalking.png',
             runeDescription: 'Deal more damage to champions with more maximum health than you.'
           },
           {
@@ -375,8 +375,8 @@ const state = {
         ],
         [
           {
-            runeName: 'Magical Footware',
-            runeImg: '/static/inspiration/t2/MagicalFootware.png',
+            runeName: 'Magical Footwear',
+            runeImg: '/static/inspiration/t2/MagicalFootwear.png',
             runeDescription: 'Takedowns on enemies grant permanent Attack Speed.'
           },
           {

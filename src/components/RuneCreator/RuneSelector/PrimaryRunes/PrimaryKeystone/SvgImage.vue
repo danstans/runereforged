@@ -50,7 +50,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .svg-img {
+.svg-img {
   min-width: 100px;
   z-index: 1;
   position: relative;
