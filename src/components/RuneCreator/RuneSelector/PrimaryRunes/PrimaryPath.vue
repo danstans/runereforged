@@ -1,6 +1,6 @@
 <template>
   <div class="primary-path">
-    <div class="path-img">
+    <div class="path-img" @click="reset">
       <svg class="svg-circles">
         <linearGradient id="circle-gradient" x1="1" y1="0.6" x2="0" y2="0">
           <stop stop-opacity="1" offset="0%" :stop-color="getPrimaryColor"></stop>
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
+  import { mapGetters, mapActions } from 'vuex'
   export default {
     name: 'PrimaryPath',
     computed: {
@@ -37,6 +37,18 @@
         'getPrimaryColor',
         'getPrimaryRuneImg'
       ])
+    },
+    methods: {
+      ...mapActions([
+        'resetState',
+        'resetKeystone',
+        'resetTier'
+      ]),
+      reset: function () {
+        this.resetState()
+        this.resetKeystone()
+        this.resetTier()
+      }
     }
   }
 </script>
@@ -51,12 +63,13 @@
 
   .path-img {
     width: 100px;
-    z-index: 1;
+    z-index: 3;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     
     .svg-circles {
       position: absolute;

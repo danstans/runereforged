@@ -35,7 +35,6 @@ const actions = {
     context.commit('MUTATE_TIER_RUNES', payload)
   },
   resetTier: function (context) {
-    console.log('you are resetting the tier')
     context.commit('RESET_TIER')
   }
 }

@@ -128,8 +128,8 @@
         left: 0%;
         margin-left: 0;
         margin-right: 0;
-        max-width: 46px;
-        max-height: 46px;
+        max-width: 48px;
+        max-height: 48px;
       }
     }
   }
