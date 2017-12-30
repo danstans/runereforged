@@ -5,8 +5,11 @@
       <rune-selector @toggleClicked="toggleClicked" v-if="!getSecondaryPathSelected || (getSecondaryPathSelected && secondaryPathClicked)"></rune-selector>
       <rune-selected v-else></rune-selected>
     </div>
+    
     <div class="secondary-rune-tiers">
+      
       <div class="secondary-rune-imgs">
+
         <div class="secondary-rune-selected">
           <div class="border-circle">
             <svg class="svg-inner" viewBox="0 0 47 47">
@@ -27,6 +30,7 @@
             <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
           </svg>
         </div>
+        
         <div class="secondary-rune-selected">
           <div class="border-circle">
             <svg class="svg-inner" viewBox="0 0 47 47">
@@ -45,11 +49,13 @@
           </svg>
         </div>
       </div>
+
       <div class="secondary-rune-selector">
         <div class="secondary-rune-row">This is a row</div>
         <div class="secondary-rune-row">This is a row</div>
         <div class="secondary-rune-row">This is a row</div>
       </div>
+    
     </div>
   </div>
 </template>

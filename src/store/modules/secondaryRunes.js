@@ -25,6 +25,11 @@ const mutations = {
   },
   MUTATE_SECONDARY_COLOR: function (state, secondaryColor) {
     state.secondaryPathColor = secondaryColor
+  },
+  RESET_SECONDARY_RUNES: function (state) {
+    state.secondaryPathColor = '#cdbe91'
+    state.possibleSecondayPaths = []
+    state.secondaryPathSelected = null
   }
 }
 
@@ -53,6 +58,9 @@ const actions = {
         context.commit('MUTATE_SECONDARY_COLOR', '#a1d586')
         break
     }
+  },
+  resetSecondaryRunes: function (context) {
+    context.commit('RESET_SECONDARY_RUNES')
   }
 }
 

@@ -14,12 +14,14 @@
       ...mapActions([
         'resetState',
         'resetKeystone',
-        'resetTier'
+        'resetTier',
+        'resetSecondaryRunes'
       ]),
       reset: function () {
         this.resetState()
         this.resetKeystone()
         this.resetTier()
+        this.resetSecondaryRunes()
       }
     }
   }
