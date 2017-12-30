@@ -3,6 +3,7 @@ const state = {
     {
       glowImg: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Precision/glow-p.png',
       pathImg: '/static/precision/precision.png',
+      pathSmall: '/static/precision/precision-small.png',
       ringImg: '/static/precision/vfx-ring.png',
       pathTitle: 'Precision',
       pathId: 8000,
@@ -85,6 +86,7 @@ const state = {
     {
       glowImg: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Domination/glow-d.png',
       pathImg: '/static/domination/domination.png',
+      pathSmall: '/static/domination/domination-small.png',
       ringImg: '/static/domination/vfx-ring.png',
       pathTitle: 'Domination',
       pathId: 8100,
@@ -167,6 +169,7 @@ const state = {
     {
       glowImg: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Sorcery/glow-s.png',
       pathImg: '/static/sorcery/sorcery.png',
+      pathSmall: '/static/sorcery/sorcery-small.png',
       ringImg: '/static/sorcery/vfx-ring.png',
       pathTitle: 'Sorcery',
       pathId: 8200,
@@ -249,6 +252,7 @@ const state = {
     {
       glowImg: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Resolve/glow-r.png',
       pathImg: '/static/resolve/resolve.png',
+      pathSmall: '/static/resolve/resolve-small.png',
       ringImg: '/static/resolve/vfx-ring.png',
       pathTitle: 'Resolve',
       pathId: 8400,
@@ -331,6 +335,7 @@ const state = {
     {
       glowImg: 'https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/assets/Inspiration/glow-i.png',
       pathImg: '/static/inspiration/inspiration.png',
+      pathSmall: '/static/inspiration/inspiration-small.png',
       ringImg: '/static/inspiration/vfx-ring.png',
       pathTitle: 'Inspiration',
       pathId: 8300,

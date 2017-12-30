@@ -1,6 +1,6 @@
 <template>
   <div class="path-selector">
-    <path-category  v-for="(path, index) in getPaths" :category="path" :key="index"></path-category>
+    <path-category  v-for="(path, index) in getPaths" :category="path" :categoryIndex="index" :key="index"></path-category>
   </div>
 </template>
 

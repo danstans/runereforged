@@ -67,7 +67,6 @@ const mutations = {
 
 const actions = {
   changePathSelected: function (context, payload) {
-    console.log(payload.pathVal)
     context.commit('MUTATE_PATH_SELECTED', 'newStuff')
   },
   changePrimaryPath: function (context, payload) {

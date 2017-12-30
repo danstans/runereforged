@@ -106,7 +106,7 @@
       display: block;
     } 
 
-    img {
+    >img {
       max-width: 36px;
       max-height: 36px;
     }
@@ -117,22 +117,22 @@
     flex-grow: 1;
     width: 60%;
     padding-top: 20px;
-    padding-bottom: 50px;
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     .path-name {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1.2rem;
+      padding-bottom: 5px;
     }
 
     .path-info {
       font-size: 13px;
       height: 10%;
       font-family: 'Roboto', sans-serif;
+      color: #a09b8c;
     }
   }
 }

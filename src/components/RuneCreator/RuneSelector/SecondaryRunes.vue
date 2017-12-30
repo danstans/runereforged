@@ -1,29 +1,9 @@
 <template>
   <div class="secondary-runes">
     <div class="secondary-path">
-      <div class="secondary-path-img">
-        
-        <svg class="svg-circles">
-          <linearGradient id="circle-gradient-secondary" x1="1" y1="0.6" x2="0" y2="0">
-            <stop stop-opacity="1" offset="0%" :stop-color="getSecondaryPathColor"></stop>
-            <stop stop-opacity="0" offset="70%" :stop-color="getSecondaryPathColor"></stop>
-          </linearGradient>
-          <circle class="svg-circle-1" cx="50%" cy="50%" r="43%" fill="none" stroke-width="2" stroke="url(#circle-gradient-secondary)"></circle>
-          <circle class="svg-circle-2" cx="50%" cy="50%" r="43%" fill="none" stroke-width="2" stroke="url(#circle-gradient-secondary)"></circle>
-          <circle class="svg-circle-3" cx="50%" cy="50%" r="43%" fill="none" stroke-width="2" stroke="url(#circle-gradient-secondary)"></circle>
-        </svg>
-        <svg class="svg-cup">
-          <linearGradient id="cup-gradient-secondary" x1="0" y1="0" x2="0" y2="1">
-            <stop stop-opacity="0" offset="80%" :stop-color="getSecondaryPathColor"></stop>
-            <stop stop-opacity="1" offset="100%" :stop-color="getSecondaryPathColor"></stop>
-          </linearGradient>
-          <circle cx="42" cy="42" r="42" fill="none" stroke-width="2" stroke="url(#cup-gradient-secondary)"></circle>
-        </svg>
-
-      </div>
-      <div class="secondary-rune-selector">
-        This is the rune selector
-      </div>
+      <path-img @toggleClicked="toggleClicked"></path-img>
+      <rune-selector @toggleClicked="toggleClicked" v-if="!getSecondaryPathSelected || (getSecondaryPathSelected && secondaryPathClicked)"></rune-selector>
+      <rune-selected v-else></rune-selected>
     </div>
     <div class="secondary-rune-tiers">
       <div class="secondary-rune-imgs">
@@ -76,74 +56,42 @@
 
 <script>
   import { mapGetters } from 'vuex'
+  import PathImg from './SecondaryRunes/PathImg'
+  import RuneSelector from './SecondaryRunes/RuneSelector'
+  import RuneSelected from './SecondaryRunes/RuneSelected'
   export default {
     name: 'secondaryRunes',
+    components: { PathImg, RuneSelector, RuneSelected },
+    data () {
+      return {
+        secondaryPathClicked: false
+      }
+    },
     computed: {
       ...mapGetters([
-        'getSecondaryPathColor'
+        'getSecondaryPathColor',
+        'getSecondaryPathSelected'
       ])
+    },
+    methods: {
+      toggleClicked: function (val) {
+        if (val == null) {
+          this.secondaryPathClicked = !this.secondaryPathClicked
+        } else {
+          this.secondaryPathClicked = val
+        }
+      }
     }
   }
 </script>
 
 <style lang="scss" scoped>
 .secondary-runes {
-
   .secondary-path {
     width: 305px;
     height: 100px;
     display: flex;
     flex-direction: row;
-
-    .secondary-path-img {
-      width: 100px;
-      height: inherit;
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-
-      .svg-circles {
-        position: absolute;
-        margin: -32px;
-        top: 50%;
-        left: 50%;
-        width: 64px;
-        height: 64px;
-        display: block;
-
-        .svg-circle-1 {
-          transform: translateY(6%);
-          transform-origin: 50% 50%;
-        }
-
-        .svg-circle-2 {
-          transform: rotate(120deg) translateY(6%);
-          transform-origin: 50% 50%;
-        }
-
-        .svg-circle-3 {
-          transform: rotate(240deg) translateY(6%);
-          transform-origin: 50% 50%;
-        }
-      }
-
-      .svg-cup {
-        position: absolute;
-        left: 7px;
-        bottom: 7px;
-        width: 86px;
-        height: 86px;
-        display: block;
-      } 
-    }
-
-    .secondary-rune-selector {
-      width: 200px;
-      height: 100px;
-      border: 1px solid white;
-    }
   }
 
   .secondary-rune-tiers {
