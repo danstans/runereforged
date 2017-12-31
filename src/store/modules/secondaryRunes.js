@@ -69,6 +69,11 @@ const mutations = {
     state.secondaryTiers = [null, null, null]
     state.secondaryNumRuneTiers = 0
     state.twoRunesSelected = false
+  },
+  RESET_SECONDARY_TIERS: function (state) {
+    state.secondaryTiers = [null, null, null]
+    state.secondaryNumRuneTiers = 0
+    state.twoRunesSelected = false
   }
 }
 
@@ -103,6 +108,9 @@ const actions = {
   },
   resetSecondaryRunes: function (context) {
     context.commit('RESET_SECONDARY_RUNES')
+  },
+  resetSecondaryTiers: function (context) {
+    context.commit('RESET_SECONDARY_TIERS')
   }
 }
 

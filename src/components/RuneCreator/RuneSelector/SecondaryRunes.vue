@@ -155,7 +155,8 @@
     },
     methods: {
       ...mapActions([
-        'updateSecondaryTier'
+        'updateSecondaryTier',
+        'updateSecondaryRuneTier'
       ]),
       toggleClicked: function (val) {
         if (val == null) {
@@ -165,11 +166,10 @@
         }
       },
       selectSecondary: function (secondaryTier, index) {
-        console.log(`Selected level ${index} rune`)
-        console.log(secondaryTier)
         this.updateSecondaryTier({runeTier: index, rune: secondaryTier})
         if (this.getSecondaryNumRunes === 2) {
           this.showRunes = false
+          this.updateSecondaryRuneTier({runes: this.getSecondaryTiers})
         }
       },
       toggleShowRunes: function (val) {

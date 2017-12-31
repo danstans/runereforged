@@ -51,7 +51,8 @@
         'updatePossibleKeystones',
         'selectKeystone',
         'updatePossibleRunes',
-        'updatePossibleSecondaryPaths'
+        'updatePossibleSecondaryPaths',
+        'updatePrimaryPath'
       ]),
       selectPath: function (pathId, keystones, runetiers) {
         this.changePathSelected({pathVal: true})
@@ -59,6 +60,7 @@
         this.updatePossibleKeystones({keystones: keystones})
         this.updatePossibleRunes({runes: runetiers})
         this.updatePossibleSecondaryPaths({primaryIndex: this.categoryIndex, paths: this.getPaths})
+        this.updatePrimaryPath({pathId: pathId})
       },
       clickKeystone: function (pathId, keystones, keystone, runetiers) {
         this.changePathSelected({pathVal: true})
@@ -67,6 +69,7 @@
         this.updatePossibleKeystones({keystone: keystones})
         this.updatePossibleRunes({runes: runetiers})
         this.updatePossibleSecondaryPaths({primaryIndex: this.categoryIndex, paths: this.getPaths})
+        this.updatePrimaryPath({pathId: pathId})
       }
     },
     data () {

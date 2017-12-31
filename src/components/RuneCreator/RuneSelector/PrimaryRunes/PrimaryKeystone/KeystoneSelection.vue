@@ -25,10 +25,12 @@
     },
     methods: {
       ...mapActions([
-        'selectKeystone'
+        'selectKeystone',
+        'updatePrimaryKeystone'
       ]),
       clickKeystone: function (keystone) {
         this.selectKeystone({keystone: keystone})
+        this.updatePrimaryKeystone({keystone: keystone})
         this.$emit('toggleClicked', false)
       }
     }

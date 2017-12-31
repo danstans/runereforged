@@ -43,13 +43,15 @@
         'resetState',
         'resetKeystone',
         'resetTier',
-        'resetSecondaryRunespurple14'
+        'resetSecondaryRunes',
+        'resetRunePath'
       ]),
       reset: function () {
         this.resetState()
         this.resetKeystone()
         this.resetTier()
         this.resetSecondaryRunes()
+        this.resetRunePath()
       }
     }
   }

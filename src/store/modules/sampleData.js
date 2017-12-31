@@ -33,16 +33,19 @@ const state = {
           {
             runeName: 'Overheal',
             runeImg: '/static/precision/t1/Overheal.png',
+            pathId: 9101,
             runeDescription: 'Excess healing on you becomes a shield'
           },
           {
             runeName: 'Triumph',
             runeImg: '/static/precision/t1/Triumph.png',
+            pathId: 9111,
             runeDescription: 'Takedowns restore 15% of your missing health and grant an additional 25 gold.'
           },
           {
             runeName: 'Presence of Mind',
             runeImg: '/static/precision/t1/PresenceOfMind.png',
+            pathId: 8009,
             runeDescription: 'For 5s after gaining a level or takedown any mana you spend is fully refunded'
           }
         ],
@@ -50,16 +53,19 @@ const state = {
           {
             runeName: 'Legend: Alacrity',
             runeImg: '/static/precision/t2/LegendAlacrity.png',
+            pathId: 9104,
             runeDescription: 'Takedowns on enemies grant permanent Attack Speed.'
           },
           {
             runeName: 'Legend: Tenacity',
             runeImg: '/static/precision/t2/LegendTenacity.png',
+            pathId: 9105,
             runeDescription: 'Takedowns on enemies grant permanent Tenacity.'
           },
           {
             runeName: 'Legend: Bloodline',
             runeImg: '/static/precision/t2/LegendBloodline.png',
+            pathId: 9103,
             runeDescription: 'Takedowns on enemies grant permanent Lifesteal.'
           }
         ],
@@ -67,16 +73,19 @@ const state = {
           {
             runeName: 'Coup De Grace',
             runeImg: '/static/precision/t3/CoupDeGrace.png',
+            pathId: 8014,
             runeDescription: 'Deal more damage to low health enemy champions.'
           },
           {
             runeName: 'Cut Down',
             runeImg: '/static/precision/t3/CutDown.png',
+            pathId: 8017,
             runeDescription: 'Deal more damage to champions with more maximum health than you.'
           },
           {
             runeName: 'Last Stand',
             runeImg: '/static/precision/t3/LastStand.png',
+            pathId: 8299,
             runeDescription: 'Deal more damage to champions while you are low on health.'
           }
         ]
@@ -116,16 +125,19 @@ const state = {
           {
             runeName: 'Cheap Shot',
             runeImg: '/static/domination/t1/CheapShot.png',
+            pathId: 8126,
             runeDescription: 'Excess healing on you becomes a shield'
           },
           {
             runeName: 'Taste Of Blood',
             runeImg: '/static/domination/t1/TasteOfBlood.png',
+            pathId: 8139,
             runeDescription: 'Takedowns restore 15% of your missing health and grant an additional 25 gold.'
           },
           {
             runeName: 'Sudden Impact',
             runeImg: '/static/domination/t1/SuddenImpact.png',
+            pathId: 8143,
             runeDescription: 'For 5s after gaining a level or takedown any mana you spend is fully refunded'
           }
         ],
@@ -133,16 +145,19 @@ const state = {
           {
             runeName: 'Zombie Ward',
             runeImg: '/static/domination/t2/ZombieWard.png',
+            pathId: 8236,
             runeDescription: 'Takedowns on enemies grant permanent Attack Speed.'
           },
           {
             runeName: 'Ghost Poro',
             runeImg: '/static/domination/t2/GhostPoro.png',
+            pathId: 8120,
             runeDescription: 'Takedowns on enemies grant permanent Tenacity.'
           },
           {
             runeName: 'Eyeball Collection',
             runeImg: '/static/domination/t2/EyeballCollection.png',
+            pathId: 8138,
             runeDescription: 'Takedowns on enemies grant permanent Lifesteal.'
           }
         ],
@@ -150,16 +165,19 @@ const state = {
           {
             runeName: 'Ravenous Hunter',
             runeImg: '/static/domination/t3/RavenousHunter.png',
+            pathId: 8135,
             runeDescription: 'Deal more damage to low health enemy champions.'
           },
           {
             runeName: 'Ingenious Hunter',
             runeImg: '/static/domination/t3/IngeniousHunter.png',
+            pathId: 8134,
             runeDescription: 'Deal more damage to champions with more maximum health than you.'
           },
           {
             runeName: 'Relentless Hunter',
             runeImg: '/static/domination/t3/RelentlessHunter.png',
+            pathId: 8105,
             runeDescription: 'Deal more damage to champions while you are low on health.'
           }
         ]
@@ -199,16 +217,19 @@ const state = {
           {
             runeName: 'Nullifying Orb',
             runeImg: '/static/sorcery/t1/NullifyingOrb.png',
+            pathId: 8224,
             runeDescription: 'Excess healing on you becomes a shield'
           },
           {
             runeName: 'Manaflow Band',
             runeImg: '/static/sorcery/t1/ManaflowBand.png',
+            pathId: 8226,
             runeDescription: 'Takedowns restore 15% of your missing health and grant an additional 25 gold.'
           },
           {
             runeName: 'The Ultimate Hat',
             runeImg: '/static/sorcery/t1/TheUltimateHat.png',
+            pathId: 8243,
             runeDescription: 'For 5s after gaining a level or takedown any mana you spend is fully refunded'
           }
         ],
@@ -216,16 +237,19 @@ const state = {
           {
             runeName: 'Transcendence',
             runeImg: '/static/sorcery/t2/Transcendence.png',
+            pathId: 8210,
             runeDescription: 'Takedowns on enemies grant permanent Attack Speed.'
           },
           {
             runeName: 'Celerity',
             runeImg: '/static/sorcery/t2/Celerity.png',
+            pathId: 8234,
             runeDescription: 'Takedowns on enemies grant permanent Tenacity.'
           },
           {
             runeName: 'Absolute Focus',
             runeImg: '/static/sorcery/t2/AbsoluteFocus.png',
+            pathId: 8233,
             runeDescription: 'Takedowns on enemies grant permanent Lifesteal.'
           }
         ],
@@ -233,16 +257,19 @@ const state = {
           {
             runeName: 'Scorch',
             runeImg: '/static/sorcery/t3/Scorch.png',
+            pathId: 8237,
             runeDescription: 'Deal more damage to low health enemy champions.'
           },
           {
             runeName: 'Water Walking',
             runeImg: '/static/sorcery/t3/Waterwalking.png',
+            pathId: 8232,
             runeDescription: 'Deal more damage to champions with more maximum health than you.'
           },
           {
             runeName: 'Gathering Storm',
             runeImg: '/static/sorcery/t3/GatheringStorm.png',
+            pathId: 8236,
             runeDescription: 'Deal more damage to champions while you are low on health.'
           }
         ]
@@ -282,16 +309,19 @@ const state = {
           {
             runeName: 'Unflinching',
             runeImg: '/static/resolve/t1/Unflinching.png',
+            pathId: 8242,
             runeDescription: 'Excess healing on you becomes a shield'
           },
           {
             runeName: 'Demolish',
             runeImg: '/static/resolve/t1/Demolish.png',
+            pathId: 8446,
             runeDescription: 'Takedowns restore 15% of your missing health and grant an additional 25 gold.'
           },
           {
             runeName: 'Font of life',
             runeImg: '/static/resolve/t1/FontOfLife.png',
+            pathId: 8463,
             runeDescription: 'For 5s after gaining a level or takedown any mana you spend is fully refunded'
           }
         ],
@@ -299,16 +329,19 @@ const state = {
           {
             runeName: 'Iron Skin',
             runeImg: '/static/resolve/t2/IronSkin.png',
+            pathId: 8430,
             runeDescription: 'Takedowns on enemies grant permanent Attack Speed.'
           },
           {
             runeName: 'Mirror Shell',
             runeImg: '/static/resolve/t2/MirrorShell.png',
+            pathId: 8435,
             runeDescription: 'Takedowns on enemies grant permanent Tenacity.'
           },
           {
             runeName: 'Conditioning',
             runeImg: '/static/resolve/t2/Conditioning.png',
+            pathId: 8429,
             runeDescription: 'Takedowns on enemies grant permanent Lifesteal.'
           }
         ],
@@ -316,16 +349,19 @@ const state = {
           {
             runeName: 'Overgrowth',
             runeImg: '/static/resolve/t3/Overgrowth.png',
+            pathId: 8451,
             runeDescription: 'Deal more damage to low health enemy champions.'
           },
           {
             runeName: 'Revitalize',
             runeImg: '/static/resolve/t3/Revitalize.png',
+            pathId: 8453,
             runeDescription: 'Deal more damage to champions with more maximum health than you.'
           },
           {
             runeName: 'Second Wind',
             runeImg: '/static/resolve/t3/SecondWind.png',
+            pathId: 8444,
             runeDescription: 'Deal more damage to champions while you are low on health.'
           }
         ]
@@ -365,16 +401,19 @@ const state = {
           {
             runeName: 'Hextech Flashtraption',
             runeImg: '/static/inspiration/t1/HextechFlashtraption.png',
+            pathId: 8306,
             runeDescription: 'Excess healing on you becomes a shield'
           },
           {
             runeName: 'Biscuit Delivery',
             runeImg: '/static/inspiration/t1/BiscuitDelivery.png',
+            pathId: 8345,
             runeDescription: 'Takedowns restore 15% of your missing health and grant an additional 25 gold.'
           },
           {
             runeName: 'Perfect Timing',
             runeImg: '/static/inspiration/t1/PerfectTiming.png',
+            pathId: 8313,
             runeDescription: 'For 5s after gaining a level or takedown any mana you spend is fully refunded'
           }
         ],
@@ -382,16 +421,19 @@ const state = {
           {
             runeName: 'Magical Footwear',
             runeImg: '/static/inspiration/t2/MagicalFootwear.png',
+            pathId: 8304,
             runeDescription: 'Takedowns on enemies grant permanent Attack Speed.'
           },
           {
             runeName: 'Future\'s Market',
             runeImg: '/static/inspiration/t2/FuturesMarket.png',
+            pathId: 8321,
             runeDescription: 'Takedowns on enemies grant permanent Tenacity.'
           },
           {
             runeName: 'Minion Dematerializer',
             runeImg: '/static/inspiration/t2/MinionDematerializer.png',
+            pathId: 8316,
             runeDescription: 'Takedowns on enemies grant permanent Lifesteal.'
           }
         ],
@@ -399,16 +441,19 @@ const state = {
           {
             runeName: 'Cosmic Insight',
             runeImg: '/static/inspiration/t3/CosmicInsight.png',
+            pathId: 8347,
             runeDescription: 'Deal more damage to low health enemy champions.'
           },
           {
             runeName: 'Approach Velocity',
             runeImg: '/static/inspiration/t3/ApproachVelocity.png',
+            pathId: 8410,
             runeDescription: 'Deal more damage to champions with more maximum health than you.'
           },
           {
             runeName: 'Celestial Body',
             runeImg: '/static/inspiration/t3/CelestialBody.png',
+            pathId: 8339,
             runeDescription: 'Deal more damage to champions while you are low on health.'
           }
         ]

@@ -15,13 +15,15 @@
         'resetState',
         'resetKeystone',
         'resetTier',
-        'resetSecondaryRunes'
+        'resetSecondaryRunes',
+        'resetRunePath'
       ]),
       reset: function () {
         this.resetState()
         this.resetKeystone()
         this.resetTier()
         this.resetSecondaryRunes()
+        this.resetRunePath()
       }
     }
   }

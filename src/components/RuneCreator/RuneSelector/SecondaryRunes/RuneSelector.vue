@@ -17,11 +17,17 @@
     },
     methods: {
       ...mapActions([
-        'updateSecondaryPath'
+        'updateSecondaryPath',
+        'updateSecondaryRunePath',
+        'resetSecondaryTiers',
+        'resetRuneTier'
       ]),
       selectSecondary: function (secondaryPath) {
         // console.log(secondaryPath) Select Secondary
+        this.resetSecondaryTiers()
+        this.resetRuneTier()
         this.updateSecondaryPath({secondaryRunes: secondaryPath})
+        this.updateSecondaryRunePath({secondaryRunes: secondaryPath})
         this.$emit('toggleClicked', false)
       }
     }

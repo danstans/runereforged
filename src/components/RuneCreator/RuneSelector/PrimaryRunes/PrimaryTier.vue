@@ -58,10 +58,12 @@
     props: [ 'possibleRunes', 'tierLevel' ],
     methods: {
       ...mapActions([
-        'updateTierRunes'
+        'updateTierRunes',
+        'updatePrimaryTiers'
       ]),
       selectTierRune: function (tier, rune) {
         this.updateTierRunes({tier: tier, runes: rune})
+        this.updatePrimaryTiers({tier: tier, runes: rune})
       },
       toggleClicked: function (val) {
         if (val == null) {
@@ -69,7 +71,6 @@
         } else {
           this.buttonClicked = val
         }
-        console.log(`The value is now ${this.buttonClicked}`)
       }
     }
   }
