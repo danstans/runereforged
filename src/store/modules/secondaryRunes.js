@@ -1,7 +1,12 @@
+import Vue from 'vue'
+
 const state = {
   secondaryPathColor: '#cdbe91',
   possibleSecondayPaths: [],
-  secondaryPathSelected: null
+  secondaryPathSelected: null,
+  secondaryTiers: [null, null, null],
+  secondaryNumRuneTiers: 0,
+  twoRunesSelected: false
 }
 
 const getters = {
@@ -13,6 +18,9 @@ const getters = {
   },
   getSecondaryPathSelected: function (state) {
     return state.secondaryPathSelected
+  },
+  getSecondaryTiers: function (state) {
+    return state.secondaryTiers
   }
 }
 
@@ -25,6 +33,28 @@ const mutations = {
   },
   MUTATE_SECONDARY_COLOR: function (state, secondaryColor) {
     state.secondaryPathColor = secondaryColor
+  },
+  MUTATE_SECONDARY_TIER: function (state, payload) {
+    if (state.secondaryTiers[payload.runeTier] === null && state.secondaryNumRuneTiers < 2) {
+      state.secondaryNumRuneTiers += 1
+      Vue.set(state.secondaryTiers, payload.runeTier, payload.rune)
+      if (state.secondaryNumRuneTiers === 2) {
+        state.twoRunesSelected = true
+      }
+    } else if (state.secondaryTiers[payload.runeTier] === null && state.secondaryNumRuneTiers === 2) {
+      if (state.secondaryTiers[0] && state.secondaryTiers[1]) {
+        Vue.set(state.secondaryTiers, 0, null)
+        Vue.set(state.secondaryTiers, 2, payload.rune)
+      } else if (state.secondaryTiers[0] && state.secondaryTiers[2]) {
+        Vue.set(state.secondaryTiers, 2, null)
+        Vue.set(state.secondaryTiers, 1, payload.rune)
+      } else if (state.secondaryTiers[1] && state.secondaryTiers[2]) {
+        Vue.set(state.secondaryTiers, 1, null)
+        Vue.set(state.secondaryTiers, 0, payload.rune)
+      }
+    } else if (state.secondaryTiers[payload.runeTier] !== null) {
+      Vue.set(state.secondaryTiers, payload.runeTier, payload.rune)
+    }
   },
   RESET_SECONDARY_RUNES: function (state) {
     state.secondaryPathColor = '#cdbe91'
@@ -58,6 +88,9 @@ const actions = {
         context.commit('MUTATE_SECONDARY_COLOR', '#a1d586')
         break
     }
+  },
+  updateSecondaryTier: function (context, payload) {
+    context.commit('MUTATE_SECONDARY_TIER', payload)
   },
   resetSecondaryRunes: function (context) {
     context.commit('RESET_SECONDARY_RUNES')

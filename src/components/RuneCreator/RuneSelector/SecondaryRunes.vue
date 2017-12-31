@@ -10,6 +10,8 @@
       
       <div class="secondary-rune-imgs">
 
+
+
         <div class="secondary-rune-selected">
           <div class="border-circle">
             <svg class="svg-inner" viewBox="0 0 47 47">
@@ -30,7 +32,6 @@
             <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
           </svg>
         </div>
-        
         <div class="secondary-rune-selected">
           <div class="border-circle">
             <svg class="svg-inner" viewBox="0 0 47 47">
@@ -50,18 +51,31 @@
         </div>
       </div>
 
-      <div class="secondary-rune-selector">
-        <div class="secondary-rune-row">This is a row</div>
-        <div class="secondary-rune-row">This is a row</div>
-        <div class="secondary-rune-row">This is a row</div>
-      </div>
-    
+      <div class="secondary-rune-selector" v-if="getSecondaryPathSelected">
+        <div class="secondary-rune-row" v-for="(possibleSecondary, levelIndex) in getSecondaryPathSelected.runeTiers" :key="levelIndex">
+          <div class="img" v-for="(secondaryTier, runeIndex) in possibleSecondary" :key="runeIndex" @click="selectSecondary(secondaryTier, levelIndex)">
+            <img :src="secondaryTier.runeImg" alt="">
+            <svg class="svg-inner" viewBox="0 0 47 47">
+              <linearGradient id="secondary-gradient" x1="0" y1="0" x2="0" y2="0">
+                  <stop stop-opacity="1" offset="0%" :stop-color="getSecondaryPathColor"></stop>
+              </linearGradient>
+              <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-gradient)"></circle>
+            </svg>
+            <svg class="svg-outer" viewBox="0 0 47 47">
+              <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-gradient)"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>  
+      <div class="secondary-rune-selector" v-else>
+        Choose a secondary path  
+      </div>  
     </div>
   </div>
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
+  import { mapGetters, mapActions } from 'vuex'
   import PathImg from './SecondaryRunes/PathImg'
   import RuneSelector from './SecondaryRunes/RuneSelector'
   import RuneSelected from './SecondaryRunes/RuneSelected'
@@ -80,12 +94,20 @@
       ])
     },
     methods: {
+      ...mapActions([
+        'updateSecondaryTier'
+      ]),
       toggleClicked: function (val) {
         if (val == null) {
           this.secondaryPathClicked = !this.secondaryPathClicked
         } else {
           this.secondaryPathClicked = val
         }
+      },
+      selectSecondary: function (secondaryTier, index) {
+        console.log(`Selected level ${index} rune`)
+        console.log(secondaryTier)
+        this.updateSecondaryTier({runeTier: index, rune: secondaryTier})
       }
     }
   }
@@ -154,7 +176,26 @@
       .secondary-rune-row {
         height: 33.3333%;
         width: inherit;
-        border: 1px solid white;
+        // border: 1px solid white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+
+        .img {
+          width: 33%;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          // filter: grayscale(75%);
+
+          >img {
+            max-height: 46px;
+            max-width: 46px;
+          }
+        }
       }
     }
   }
@@ -199,6 +240,33 @@
   transition: opacity 0.2s;
   filter: blur(1px);
   animation: key-rotation 2s linear forwards infinite;
+}
+
+
+.svg-inner {
+  height: 46px;
+  width: 46px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.svg-outer {
+  opacity: 0;
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 @-webkit-keyframes key-rotation {
