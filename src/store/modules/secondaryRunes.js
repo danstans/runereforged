@@ -19,6 +19,12 @@ const getters = {
   getSecondaryPathSelected: function (state) {
     return state.secondaryPathSelected
   },
+  getTwoRunesSelected: function (state) {
+    return state.twoRunesSelected
+  },
+  getSecondaryNumRunes: function (state) {
+    return state.secondaryNumRuneTiers
+  },
   getSecondaryTiers: function (state) {
     return state.secondaryTiers
   }
@@ -60,6 +66,9 @@ const mutations = {
     state.secondaryPathColor = '#cdbe91'
     state.possibleSecondayPaths = []
     state.secondaryPathSelected = null
+    state.secondaryTiers = [null, null, null]
+    state.secondaryNumRuneTiers = 0
+    state.twoRunesSelected = false
   }
 }
 

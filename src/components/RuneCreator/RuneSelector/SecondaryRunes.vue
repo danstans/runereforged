@@ -5,53 +5,105 @@
       <rune-selector @toggleClicked="toggleClicked" v-if="!getSecondaryPathSelected || (getSecondaryPathSelected && secondaryPathClicked)"></rune-selector>
       <rune-selected v-else></rune-selected>
     </div>
-    
     <div class="secondary-rune-tiers">
-      
       <div class="secondary-rune-imgs">
-
-
-
-        <div class="secondary-rune-selected">
-          <div class="border-circle">
-            <svg class="svg-inner" viewBox="0 0 47 47">
-              <linearGradient id="secondary-keystone-gradient" x1="0" y1="0" x2="0" y2="0">
-                  <stop stop-opacity="1" offset="0%" :stop-color="getSecondaryPathColor"></stop>
-              </linearGradient>
+         <template  v-if="getSecondaryNumRunes === 0">
+          <div class="secondary-rune-selected">
+            <div class="border-circle">
+              <svg class="svg-inner" viewBox="0 0 47 47">
+                <linearGradient id="secondary-keystone-gradient" x1="0" y1="0" x2="0" y2="0">
+                    <stop stop-opacity="1" offset="0%" :stop-color="getSecondaryPathColor"></stop>
+                </linearGradient>
+                <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
+              </svg>
+              <svg class="svg-spinner">
+                <linearGradient id="gradient-white-transparent" x1="0" y1="0" x2="0" y2="1">
+                  <stop stop-opacity="1" stop-color="#fff" offset="0%"></stop><stop stop-opacity="0" stop-color="#fff" offset="100%"></stop>
+                </linearGradient>
+                <path fill="none" stroke-linecap="round" stroke-width="2px" stroke="url(#gradient-white-transparent)" d="M 23.5 1 A 22.5 22.5 0 0 0 23.5 46"></path>
+                <ellipse cx="50%" cy="1px" fill="#fff" rx="5" ry="2"></ellipse>
+              </svg>
+            </div> 
+            <svg class="svg-outer-circle" viewBox="0 0 47 47">
               <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
             </svg>
-            <svg class="svg-spinner">
-              <linearGradient id="gradient-white-transparent" x1="0" y1="0" x2="0" y2="1">
-                <stop stop-opacity="1" stop-color="#fff" offset="0%"></stop><stop stop-opacity="0" stop-color="#fff" offset="100%"></stop>
-              </linearGradient>
-              <path fill="none" stroke-linecap="round" stroke-width="2px" stroke="url(#gradient-white-transparent)" d="M 23.5 1 A 22.5 22.5 0 0 0 23.5 46"></path>
-              <ellipse cx="50%" cy="1px" fill="#fff" rx="5" ry="2"></ellipse>
-            </svg>
-          </div> 
-          <svg class="svg-outer-circle" viewBox="0 0 47 47">
-            <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
-          </svg>
-        </div>
-        <div class="secondary-rune-selected">
-          <div class="border-circle">
-            <svg class="svg-inner" viewBox="0 0 47 47">
+          </div>
+          <div class="secondary-rune-selected">
+            <div class="border-circle">
+              <svg class="svg-inner" viewBox="0 0 47 47">
+                <linearGradient id="secondary-keystone-gradient" x1="0" y1="0" x2="0" y2="0">
+                    <stop stop-opacity="1" offset="0%" :stop-color="getSecondaryPathColor"></stop>
+                </linearGradient>
+                <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
+              </svg>
+              <svg class="svg-spinner">
+                <linearGradient id="gradient-white-transparent" x1="0" y1="0" x2="0" y2="1">
+                  <stop stop-opacity="1" stop-color="#fff" offset="0%"></stop><stop stop-opacity="0" stop-color="#fff" offset="100%"></stop>
+                </linearGradient>
+                <path fill="none" stroke-linecap="round" stroke-width="2px" stroke="url(#gradient-white-transparent)" d="M 23.5 1 A 22.5 22.5 0 0 0 23.5 46"></path>
+                <ellipse cx="50%" cy="1px" fill="#fff" rx="5" ry="2"></ellipse>
+              </svg>
+            </div> 
+            <svg class="svg-outer-circle" viewBox="0 0 47 47">
               <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
             </svg>
-            <svg class="svg-spinner">
-              <linearGradient id="gradient-white-transparent" x1="0" y1="0" x2="0" y2="1">
-                <stop stop-opacity="1" stop-color="#fff" offset="0%"></stop><stop stop-opacity="0" stop-color="#fff" offset="100%"></stop>
-              </linearGradient>
-              <path fill="none" stroke-linecap="round" stroke-width="2px" stroke="url(#gradient-white-transparent)" d="M 23.5 1 A 22.5 22.5 0 0 0 23.5 46"></path>
-              <ellipse cx="50%" cy="1px" fill="#fff" rx="5" ry="2"></ellipse>
+          </div>
+        </template>
+        <template  v-if="getSecondaryNumRunes === 1">
+          <div class="secondary-rune-selected" v-for="(tier, tierIndex) in getSecondaryTiers" :key="tierIndex"  v-if="tier">
+            <div class="border-circle">
+              <svg class="svg-inner" viewBox="0 0 47 47">
+                <linearGradient id="secondary-keystone-gradient" x1="0" y1="0" x2="0" y2="0">
+                    <stop stop-opacity="1" offset="0%" :stop-color="getSecondaryPathColor"></stop>
+                </linearGradient>
+                <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
+              </svg>
+            </div> 
+            <svg class="svg-outer-circle" viewBox="0 0 47 47">
+              <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
             </svg>
-          </div> 
-          <svg class="svg-outer-circle" viewBox="0 0 47 47">
-            <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
-          </svg>
-        </div>
+            <img :src="tier.runeImg" alt="">          
+          </div>
+          <div class="secondary-rune-selected">
+            <div class="border-circle">
+              <svg class="svg-inner" viewBox="0 0 47 47">
+                <linearGradient id="secondary-keystone-gradient" x1="0" y1="0" x2="0" y2="0">
+                    <stop stop-opacity="1" offset="0%" :stop-color="getSecondaryPathColor"></stop>
+                </linearGradient>
+                <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
+              </svg>
+              <svg class="svg-spinner">
+                <linearGradient id="gradient-white-transparent" x1="0" y1="0" x2="0" y2="1">
+                  <stop stop-opacity="1" stop-color="#fff" offset="0%"></stop><stop stop-opacity="0" stop-color="#fff" offset="100%"></stop>
+                </linearGradient>
+                <path fill="none" stroke-linecap="round" stroke-width="2px" stroke="url(#gradient-white-transparent)" d="M 23.5 1 A 22.5 22.5 0 0 0 23.5 46"></path>
+                <ellipse cx="50%" cy="1px" fill="#fff" rx="5" ry="2"></ellipse>
+              </svg>
+            </div> 
+            <svg class="svg-outer-circle" viewBox="0 0 47 47">
+              <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
+            </svg>
+          </div>
+        </template>
+        <template  v-if="getSecondaryNumRunes === 2">
+          <div class="secondary-rune-selected" v-for="(tier, tierIndex) in getSecondaryTiers" :key="tierIndex"  v-if="tier" @click="toggleShowRunes">
+            <div class="border-circle">
+              <svg class="svg-inner" viewBox="0 0 47 47">
+                <linearGradient id="secondary-keystone-gradient" x1="0" y1="0" x2="0" y2="0">
+                    <stop stop-opacity="1" offset="0%" :stop-color="getSecondaryPathColor"></stop>
+                </linearGradient>
+                <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
+              </svg>
+            </div> 
+            <svg class="svg-outer-circle" viewBox="0 0 47 47">
+              <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
+            </svg>
+            <img :src="tier.runeImg" alt="">          
+          </div>
+        </template>
       </div>
 
-      <div class="secondary-rune-selector" v-if="getSecondaryPathSelected">
+      <div class="secondary-rune-selector" v-if="getSecondaryPathSelected && (getSecondaryNumRunes < 2) || (getSecondaryPathSelected && (getSecondaryNumRunes === 2) && showRunes)">
         <div class="secondary-rune-row" v-for="(possibleSecondary, levelIndex) in getSecondaryPathSelected.runeTiers" :key="levelIndex">
           <div class="img" v-for="(secondaryTier, runeIndex) in possibleSecondary" :key="runeIndex" @click="selectSecondary(secondaryTier, levelIndex)">
             <img :src="secondaryTier.runeImg" alt="">
@@ -66,9 +118,13 @@
             </svg>
           </div>
         </div>
-      </div>  
-      <div class="secondary-rune-selector" v-else>
-        Choose a secondary path  
+      </div>
+
+      <div class="secondary-rune-selector" v-if="getSecondaryNumRunes === 2 && !showRunes">
+        <div class="secondary-rune-info-row" v-for="(tier, tierIndex) in getSecondaryTiers" :key="tierIndex" v-if="tier">
+          <div class="rune-name" :style="{color: getSecondaryPathColor}">{{tier.runeName}}</div>
+          <div class="rune-description">{{tier.runeDescription}}</div>
+        </div>
       </div>  
     </div>
   </div>
@@ -84,13 +140,17 @@
     components: { PathImg, RuneSelector, RuneSelected },
     data () {
       return {
-        secondaryPathClicked: false
+        secondaryPathClicked: false,
+        showRunes: false
       }
     },
     computed: {
       ...mapGetters([
         'getSecondaryPathColor',
-        'getSecondaryPathSelected'
+        'getSecondaryPathSelected',
+        'getSecondaryTiers',
+        'getTwoRunesSelected',
+        'getSecondaryNumRunes'
       ])
     },
     methods: {
@@ -108,6 +168,13 @@
         console.log(`Selected level ${index} rune`)
         console.log(secondaryTier)
         this.updateSecondaryTier({runeTier: index, rune: secondaryTier})
+        if (this.getSecondaryNumRunes === 2) {
+          this.showRunes = false
+        }
+      },
+      toggleShowRunes: function (val) {
+        console.log('you are toggleing the runes to true')
+        this.showRunes = true
       }
     }
   }
@@ -145,6 +212,14 @@
         align-items: center;
         position: relative;
         cursor: pointer;
+        position: relative;
+
+        >img {
+          padding: 0;
+          width: 46px;
+          height: 46px;
+          position: absolute;
+        }
 
         .border-circle {
           display: flex;
@@ -172,6 +247,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+          color: #a09b8c;
+      
 
       .secondary-rune-row {
         height: 33.3333%;
@@ -195,6 +272,29 @@
             max-height: 46px;
             max-width: 46px;
           }
+        }
+      }
+
+      .secondary-rune-info-row {
+        height: 50%;
+        width: inherit;
+        padding-top: 20px;
+        padding-bottom: 55px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .rune-name {
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: .85rem;
+        }
+
+        .rune-description {
+          font-size: 13px;
+          height: 10%;
+          font-family: 'Roboto', sans-serif;
         }
       }
     }
@@ -251,6 +351,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
+  z-index: 6;
 }
 
 .svg-outer {
