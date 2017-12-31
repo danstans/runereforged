@@ -1,3 +1,5 @@
+import * as firebase from 'firebase'
+
 const state = {
   primaryPath: null,
   primaryKeystone: null,
@@ -7,7 +9,17 @@ const state = {
   secondaryPath: null,
   secondaryTier1: null,
   secondaryTier2: null,
-  runePath: null
+  runePath: null,
+  championList: null
+}
+
+const getters = {
+  getRunePath: function (state) {
+    return state.runePath
+  },
+  getChampionList: function (state) {
+    return state.championList
+  }
 }
 
 const mutations = {
@@ -48,6 +60,10 @@ const mutations = {
       state.runePath = null
     }
   },
+  SET_CHAMP_LIST: function (state, championList) {
+    // console.log('you are here')
+    state.championList = championList
+  },
   RESET_RUNE_TIER: function (state) {
     state.secondaryTier1 = null
     state.secondaryTier2 = null
@@ -61,6 +77,8 @@ const mutations = {
     state.secondaryPath = null
     state.secondaryTier1 = null
     state.secondaryTier2 = null
+    state.runePath = null
+    state.championList = null
   }
 }
 
@@ -102,6 +120,16 @@ const actions = {
     })
     context.commit('CHECK_PATH_COMPLETE')
   },
+  updateChampList: function ({commit, state}, val) {
+    if (val === 'reset') {
+      commit('SET_CHAMP_LIST', null)
+    } else {
+      firebase.database().ref(state.primaryPath).child(state.primaryKeystone).once('value').then(snapshot => {
+        console.log(snapshot.val())
+        commit('SET_CHAMP_LIST', snapshot.val())
+      })
+    }
+  },
   resetRuneTier: function (context) {
     context.commit('RESET_RUNE_TIER')
     context.commit('CHECK_PATH_COMPLETE')
@@ -113,6 +141,7 @@ const actions = {
 
 export default {
   state,
+  getters,
   mutations,
   actions
 }
