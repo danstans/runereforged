@@ -10,11 +10,11 @@ I have created my own use case to showcase the rune-creator tool. Upon creating 
 
 ## Goals
 
-- [] Build a standalone rune-creator component for others to use
+- [ ] Build a standalone rune-creator component for others to use
 - [x] Build a rough draft of the rune-creator component.
 - [x] Write a script that refreshes the database with new champion.gg / riot API data.
 - [x] Populate the champion list with information based on the completed rune page.
-- [] Present additional information like why a certain champion may take a certain rune over the one you chose. Sort by percent match between the page you created and the page that is best.
+- [ ] Present additional information like why a certain champion may take a certain rune over the one you chose. Sort by percent match between the page you created and the page that is best.
 
 ## Languages & Packages
 
