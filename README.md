@@ -55,8 +55,9 @@ npm run build --report
 
 ## Things I didn't have the time for
 * The champ list is lacking, currently the list just shows champ with the matching keystone in decreasing order of win rate. The idea was to show the runes that each champion takes so that you can compare them to the rune page you created.
+* The ability to sort the champ list by different roles. Sort by highest win rate or sort by % in common with your page.
 * The secondary rune tier selection is finnicky. I know how the team did it and I wasn't feeling up for the task. Sorry, at most it's 1 extra click to get your secondary tier runes perfect. :/
 * The background images don't reflect changes based on primary and secondary paths.
 
 ## Final thoughts
-These api contest are very fun for me. The community and the ideas are very worthwhile. However, the timing for this event was not good for me at all. VueJS is a great framework and I much prefer it to things like React; I suppose I'll have to become more comfortable to react soon. I'd like to continue working on this and distribute it to other developers, but I understand if riot will not allow me to do that. Please send me a PM or email if you need to get in touch with me.
+These api contest are very fun for me. The community and the ideas are very worthwhile. However, the timing for this event was not good for me at all, I didn't realize this was going on until last saturday so I only had 7 days to develop - holidays. VueJS is a great framework and I much prefer it to others like React; I suppose I'll have to become more comfortable to react soon. I'd like to continue working on this and distribute it to other developers, but I understand if riot will not allow me to do that. Please send me a PM or email if you need to get in touch with me.
