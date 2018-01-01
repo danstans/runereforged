@@ -1,0 +1,1640 @@
+{
+  "8000" : {
+    "8005" : {
+      "-L1hoRcC447kv5h78RTI" : {
+        "champId" : 157,
+        "champName" : "Yasuo",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Yasuo.png",
+        "role" : "TOP",
+        "runes" : "8000-8005-9111-9104-8014-8200-8236-8234",
+        "runesWinRate" : 0.6098901098901099
+      },
+      "-L1hoRcFHMrd80BuYO0O" : {
+        "champId" : 498,
+        "champName" : "Xayah",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Xayah.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8005-9111-9104-8014-8200-8234-8226",
+        "runesWinRate" : 0.6060606060606061
+      },
+      "-L1hoRcQYcXht0N1ID1l" : {
+        "champId" : 110,
+        "champName" : "Varus",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Varus.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8005-9111-9104-8014-8200-8236-8233",
+        "runesWinRate" : 0.5736434108527132
+      },
+      "-L1hoRcREk2JEu5jIckL" : {
+        "champId" : 236,
+        "champName" : "Lucian",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Lucian.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8005-9111-9103-8014-8200-8233-8236",
+        "runesWinRate" : 0.5390173410404624
+      },
+      "-L1hoRcSbqXsKr_cJuiR" : {
+        "champId" : 222,
+        "champName" : "Jinx",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Jinx.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8005-9111-9103-8014-8200-8243-8236",
+        "runesWinRate" : 0.5944055944055944
+      },
+      "-L1hoRctq-4JGzT8OFKo" : {
+        "champId" : 102,
+        "champName" : "Shyvana",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Shyvana.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8005-9111-9105-8299-8100-8139-8135",
+        "runesWinRate" : 0.5929203539823009
+      },
+      "-L1hoRdCrdTVpIYolgRf" : {
+        "champId" : 29,
+        "champName" : "Twitch",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Twitch.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8005-9111-9104-8014-8300-8304-8313",
+        "runesWinRate" : 0.6363636363636364
+      },
+      "-L1hoRdJUvN2tXhmRlNJ" : {
+        "champId" : 11,
+        "champName" : "MasterYi",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/MasterYi.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8005-9111-9104-8017-8200-8234-8236",
+        "runesWinRate" : 0.6538461538461539
+      },
+      "-L1hoRdWqHblsFQjAmR5" : {
+        "champId" : 164,
+        "champName" : "Camille",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Camille.png",
+        "role" : "TOP",
+        "runes" : "8000-8005-9111-9105-8014-8100-8143-8105",
+        "runesWinRate" : 0.6078431372549019
+      },
+      "-L1hoRdl3BzAXqo-IzFe" : {
+        "champId" : 19,
+        "champName" : "Warwick",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Warwick.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8005-9111-9104-8014-8100-8105-8139",
+        "runesWinRate" : 0.6566265060240963
+      },
+      "-L1hoReOr8KxBHlaheX4" : {
+        "champId" : 39,
+        "champName" : "Irelia",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Irelia.png",
+        "role" : "TOP",
+        "runes" : "8000-8005-9111-9104-8014-8300-8304-8347",
+        "runesWinRate" : 0.5739910313901345
+      },
+      "-L1hoReTFfJX8aywIdm-" : {
+        "champId" : 77,
+        "champName" : "Udyr",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Udyr.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8005-9111-9104-8014-8400-8242-8453",
+        "runesWinRate" : 0.6896551724137931
+      },
+      "-L1hoReUqRdevUchcXkb" : {
+        "champId" : 24,
+        "champName" : "Jax",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Jax.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8005-9111-9104-8014-8100-8105-8136",
+        "runesWinRate" : 0.5909090909090909
+      },
+      "-L1hoRecjQWo2m43R256" : {
+        "champId" : 58,
+        "champName" : "Renekton",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Renekton.png",
+        "role" : "TOP",
+        "runes" : "8000-8005-9111-9105-8299-8100-8143-8135",
+        "runesWinRate" : 0.5467196819085487
+      },
+      "-L1hoRei-Smiq9LxNfAG" : {
+        "champId" : 6,
+        "champName" : "Urgot",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Urgot.png",
+        "role" : "TOP",
+        "runes" : "8000-8005-9111-9105-8014-8400-8429-8453",
+        "runesWinRate" : 0.5789473684210527
+      },
+      "-L1hoRel0EjKT8vZVnal" : {
+        "champId" : 203,
+        "champName" : "Kindred",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Kindred.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8005-9111-9104-8014-8100-8138-8143",
+        "runesWinRate" : 0.5706521739130435
+      },
+      "-L1hoRfIguxbWF-DLur3" : {
+        "champId" : 29,
+        "champName" : "Twitch",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Twitch.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8005-9111-9103-8014-8100-8143-8138",
+        "runesWinRate" : 0.5508196721311476
+      },
+      "-L1hoRg66iqx7bbUcPh5" : {
+        "champId" : 2,
+        "champName" : "Olaf",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Olaf.png",
+        "role" : "TOP",
+        "runes" : "8000-8005-9111-9104-8014-8100-8139-8135",
+        "runesWinRate" : 0.5882352941176471
+      },
+      "-L1hoRgNH3Tj4fuuD-Tn" : {
+        "champId" : 48,
+        "champName" : "Trundle",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Trundle.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8005-9111-9104-8014-8100-8126-8105",
+        "runesWinRate" : 0.5462555066079295
+      },
+      "-L1hoRgTdOl1eloFokUP" : {
+        "champId" : 23,
+        "champName" : "Tryndamere",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Tryndamere.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8005-9111-9104-8014-8100-8143-8138",
+        "runesWinRate" : 0.5679012345679012
+      },
+      "-L1hoRgbhir8ChdVN_bL" : {
+        "champId" : 266,
+        "champName" : "Aatrox",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Aatrox.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8005-9111-9104-8299-8100-8143-8135",
+        "runesWinRate" : 0.5964912280701754
+      }
+    },
+    "8008" : {
+      "-L1hoRbWwNmpzSnfJOW3" : {
+        "champId" : 67,
+        "champName" : "Vayne",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Vayne.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8008-9111-9103-8014-8100-8138-8143",
+        "runesWinRate" : 0.6779661016949152
+      },
+      "-L1hoRdQ8t7TulDdmWPV" : {
+        "champId" : 429,
+        "champName" : "Kalista",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Kalista.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8008-9111-9103-8014-8100-8143-8105",
+        "runesWinRate" : 0.6186440677966102
+      },
+      "-L1hoReWRAWyI-HLt_O5" : {
+        "champId" : 96,
+        "champName" : "KogMaw",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/KogMaw.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8008-9111-9104-8014-8300-8347-8304",
+        "runesWinRate" : 0.7
+      },
+      "-L1hoRg3I24Mxb1odKFe" : {
+        "champId" : 10,
+        "champName" : "Kayle",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Kayle.png",
+        "role" : "TOP",
+        "runes" : "8000-8008-9111-9104-8014-8200-8234-8243",
+        "runesWinRate" : 0.6792452830188679
+      },
+      "-L1hoRg9waMdXCoMUDE-" : {
+        "champId" : 266,
+        "champName" : "Aatrox",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Aatrox.png",
+        "role" : "TOP",
+        "runes" : "8000-8008-9101-9104-8014-8100-8143-8135",
+        "runesWinRate" : 0.58
+      },
+      "-L1hoRgcKkHq6SmvSDth" : {
+        "champId" : 10,
+        "champName" : "Kayle",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Kayle.png",
+        "role" : "MIDDLE",
+        "runes" : "8000-8008-9111-9104-8014-8200-8210-8243",
+        "runesWinRate" : 0.620253164556962
+      }
+    },
+    "8021" : {
+      "-L1hoRby5SPJmM5LPvjm" : {
+        "champId" : 18,
+        "champName" : "Tristana",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Tristana.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8021-9111-9103-8014-8100-8143-8138",
+        "runesWinRate" : 0.7352941176470589
+      },
+      "-L1hoRc7n8AuJP6q9Wc_" : {
+        "champId" : 157,
+        "champName" : "Yasuo",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Yasuo.png",
+        "role" : "MIDDLE",
+        "runes" : "8000-8021-9111-9104-8014-8100-8138-8143",
+        "runesWinRate" : 0.6293103448275862
+      },
+      "-L1hoRcMfCt-URn7PPi3" : {
+        "champId" : 51,
+        "champName" : "Caitlyn",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Caitlyn.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8021-9101-9104-8014-8100-8139-8105",
+        "runesWinRate" : 0.6347826086956522
+      },
+      "-L1hoRczwcTlkQcNwIko" : {
+        "champId" : 22,
+        "champName" : "Ashe",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Ashe.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8021-9111-9103-8014-8200-8226-8234",
+        "runesWinRate" : 0.6328125
+      },
+      "-L1hoReD2ZZn1KJdxIge" : {
+        "champId" : 104,
+        "champName" : "Graves",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Graves.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8021-9111-9104-8014-8200-8234-8236",
+        "runesWinRate" : 0.5931372549019608
+      },
+      "-L1hoReZ2vUv6eFfylOy" : {
+        "champId" : 15,
+        "champName" : "Sivir",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Sivir.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8021-9111-9103-8014-8100-8139-8105",
+        "runesWinRate" : 0.6194029850746269
+      },
+      "-L1hoRealkl7CAt8QE2D" : {
+        "champId" : 42,
+        "champName" : "Corki",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Corki.png",
+        "role" : "MIDDLE",
+        "runes" : "8000-8021-9111-9104-8014-8300-8313-8347",
+        "runesWinRate" : 0.646551724137931
+      },
+      "-L1hoRf2tsPA8llKaXeK" : {
+        "champId" : 23,
+        "champName" : "Tryndamere",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Tryndamere.png",
+        "role" : "TOP",
+        "runes" : "8000-8021-9111-9104-8299-8100-8143-8105",
+        "runesWinRate" : 0.6355140186915887
+      },
+      "-L1hoRgUscsbe5EGEWez" : {
+        "champId" : 42,
+        "champName" : "Corki",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Corki.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8000-8021-9111-9104-8014-8200-8226-8234",
+        "runesWinRate" : 0.5345528455284553
+      },
+      "-L1hoRgaJZVWbJo9oJYS" : {
+        "champId" : 36,
+        "champName" : "DrMundo",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/DrMundo.png",
+        "role" : "JUNGLE",
+        "runes" : "8000-8021-9111-9103-8299-8400-8430-8444",
+        "runesWinRate" : 0.6081081081081081
+      }
+    }
+  },
+  "8100" : {
+    "8112" : {
+      "-L1hoRbPXtj2oEIXoL29" : {
+        "champId" : 64,
+        "champName" : "LeeSin",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/LeeSin.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8136-8105-8000-9104-8299",
+        "runesWinRate" : 0.6025641025641025
+      },
+      "-L1hoRbf1DLS6DqPTL3d" : {
+        "champId" : 121,
+        "champName" : "Khazix",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Khazix.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8126-8138-8105-8000-8014-9111",
+        "runesWinRate" : 0.6114649681528662
+      },
+      "-L1hoRbqrK3GVwlC_siJ" : {
+        "champId" : 142,
+        "champName" : "Zoe",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Zoe.png",
+        "role" : "MIDDLE",
+        "runes" : "8100-8112-8143-8136-8135-8200-8226-8210",
+        "runesWinRate" : 0.5736842105263158
+      },
+      "-L1hoRbtVwf-wvAgde_U" : {
+        "champId" : 238,
+        "champName" : "Zed",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Zed.png",
+        "role" : "MIDDLE",
+        "runes" : "8100-8112-8139-8136-8135-8200-8224-8237",
+        "runesWinRate" : 0.6134453781512605
+      },
+      "-L1hoRc5DUUIjVf3OmZ4" : {
+        "champId" : 59,
+        "champName" : "JarvanIV",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/JarvanIV.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8136-8135-8200-8243-8234",
+        "runesWinRate" : 0.5957446808510638
+      },
+      "-L1hoRc9Fs3lae-EVmfu" : {
+        "champId" : 55,
+        "champName" : "Katarina",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Katarina.png",
+        "role" : "MIDDLE",
+        "runes" : "8100-8112-8143-8138-8135-8200-8236-8224",
+        "runesWinRate" : 0.5722070844686649
+      },
+      "-L1hoRdGAnkLHTxodisW" : {
+        "champId" : 5,
+        "champName" : "XinZhao",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/XinZhao.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8120-8105-8000-9111-8014",
+        "runesWinRate" : 0.6310679611650486
+      },
+      "-L1hoRdIvztdn3evweDf" : {
+        "champId" : 432,
+        "champName" : "Bard",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Bard.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8100-8112-8126-8136-8105-8200-8237-8210",
+        "runesWinRate" : 0.6198347107438017
+      },
+      "-L1hoRdMpLMIf0fQS7PG" : {
+        "champId" : 103,
+        "champName" : "Ahri",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Ahri.png",
+        "role" : "MIDDLE",
+        "runes" : "8100-8112-8143-8138-8135-8200-8234-8243",
+        "runesWinRate" : 0.6187050359712231
+      },
+      "-L1hoRdeAH_yRPkaYsuP" : {
+        "champId" : 126,
+        "champName" : "Jayce",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Jayce.png",
+        "role" : "TOP",
+        "runes" : "8100-8112-8143-8138-8105-8200-8226-8234",
+        "runesWinRate" : 0.6027397260273972
+      },
+      "-L1hoRdo-yokUQJuDmWh" : {
+        "champId" : 105,
+        "champName" : "Fizz",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Fizz.png",
+        "role" : "MIDDLE",
+        "runes" : "8100-8112-8143-8138-8135-8200-8224-8234",
+        "runesWinRate" : 0.64
+      },
+      "-L1hoReHMf43pbZNb_f6" : {
+        "champId" : 7,
+        "champName" : "Leblanc",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Leblanc.png",
+        "role" : "MIDDLE",
+        "runes" : "8100-8112-8143-8136-8135-8200-8226-8236",
+        "runesWinRate" : 0.6057692307692307
+      },
+      "-L1hoReLM5fGUyrmxp3e" : {
+        "champId" : 254,
+        "champName" : "Vi",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Vi.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8136-8135-8000-8014-9111",
+        "runesWinRate" : 0.5871886120996441
+      },
+      "-L1hoReMzm1nmJ9mCDgi" : {
+        "champId" : 35,
+        "champName" : "Shaco",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Shaco.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8136-8105-8000-9104-9111",
+        "runesWinRate" : 0.6481481481481481
+      },
+      "-L1hoReREejqUA5c0k-E" : {
+        "champId" : 60,
+        "champName" : "Elise",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Elise.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8138-8105-8200-8233-8232",
+        "runesWinRate" : 0.5639097744360902
+      },
+      "-L1hoRehlcwoHRtZtN7q" : {
+        "champId" : 80,
+        "champName" : "Pantheon",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Pantheon.png",
+        "role" : "TOP",
+        "runes" : "8100-8112-8143-8138-8135-8200-8233-8237",
+        "runesWinRate" : 0.577922077922078
+      },
+      "-L1hoRekdEOF7PjmD5Um" : {
+        "champId" : 91,
+        "champName" : "Talon",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Talon.png",
+        "role" : "MIDDLE",
+        "runes" : "8100-8112-8143-8138-8135-8200-8234-8243",
+        "runesWinRate" : 0.6290322580645161
+      },
+      "-L1hoRerf5Q9O4UWWlcr" : {
+        "champId" : 131,
+        "champName" : "Diana",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Diana.png",
+        "role" : "MIDDLE",
+        "runes" : "8100-8112-8143-8138-8105-8200-8234-8236",
+        "runesWinRate" : 0.6149068322981367
+      },
+      "-L1hoRes-_zKPQm4peQZ" : {
+        "champId" : 56,
+        "champName" : "Nocturne",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Nocturne.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8138-8135-8000-8014-9104",
+        "runesWinRate" : 0.6410256410256411
+      },
+      "-L1hoRetdbG2xi8EsPbe" : {
+        "champId" : 84,
+        "champName" : "Akali",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Akali.png",
+        "role" : "TOP",
+        "runes" : "8100-8112-8143-8138-8135-8200-8236-8233",
+        "runesWinRate" : 0.5723270440251572
+      },
+      "-L1hoRfOOLyizVWwM3_d" : {
+        "champId" : 240,
+        "champName" : "Kled",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Kled.png",
+        "role" : "TOP",
+        "runes" : "8100-8112-8143-8138-8134-8000-9111-8014",
+        "runesWinRate" : 0.5868544600938967
+      },
+      "-L1hoRfRmjO_H6hzPYa8" : {
+        "champId" : 421,
+        "champName" : "RekSai",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/RekSai.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8126-8138-8105-8000-9111-9104",
+        "runesWinRate" : 0.5821917808219178
+      },
+      "-L1hoRfxyVhQUw8BrNoR" : {
+        "champId" : 84,
+        "champName" : "Akali",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Akali.png",
+        "role" : "MIDDLE",
+        "runes" : "8100-8112-8143-8138-8135-8200-8234-8236",
+        "runesWinRate" : 0.5882352941176471
+      },
+      "-L1hoRfz-JCKS-TMqN-O" : {
+        "champId" : 62,
+        "champName" : "MonkeyKing",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/MonkeyKing.png",
+        "role" : "TOP",
+        "runes" : "8100-8112-8143-8138-8135-8000-9103-8014",
+        "runesWinRate" : 0.5720338983050848
+      },
+      "-L1hoRg0OJnSjSf12LuF" : {
+        "champId" : 59,
+        "champName" : "JarvanIV",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/JarvanIV.png",
+        "role" : "TOP",
+        "runes" : "8100-8112-8143-8138-8105-8200-8243-8210",
+        "runesWinRate" : 0.58
+      },
+      "-L1hoRgDJj0RDyYWJkw7" : {
+        "champId" : 3,
+        "champName" : "Galio",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Galio.png",
+        "role" : "TOP",
+        "runes" : "8100-8112-8126-8120-8135-8000-9111-8014",
+        "runesWinRate" : 0.515625
+      },
+      "-L1hoRgDJj0RDyYWJkw8" : {
+        "champId" : 133,
+        "champName" : "Quinn",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Quinn.png",
+        "role" : "TOP",
+        "runes" : "8100-8112-8143-8138-8135-8000-8014-9111",
+        "runesWinRate" : 0.6403508771929824
+      },
+      "-L1hoRgFxqvN3VjKoMNF" : {
+        "champId" : 80,
+        "champName" : "Pantheon",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Pantheon.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8136-8105-8200-8234-8237",
+        "runesWinRate" : 0.5448275862068965
+      },
+      "-L1hoRgG30At0SWzd4kB" : {
+        "champId" : 131,
+        "champName" : "Diana",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Diana.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8120-8135-8000-9111-8014",
+        "runesWinRate" : 0.5882352941176471
+      },
+      "-L1hoRgH4pu74ERX38Vz" : {
+        "champId" : 245,
+        "champName" : "Ekko",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Ekko.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8138-8135-8200-8233-8236",
+        "runesWinRate" : 0.5807860262008734
+      },
+      "-L1hoRgL2E5_YJNrVTB2" : {
+        "champId" : 245,
+        "champName" : "Ekko",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Ekko.png",
+        "role" : "TOP",
+        "runes" : "8100-8112-8143-8136-8135-8000-9111-8014",
+        "runesWinRate" : 0.5714285714285714
+      },
+      "-L1hoRgbhir8ChdVN_bK" : {
+        "champId" : 91,
+        "champName" : "Talon",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Talon.png",
+        "role" : "TOP",
+        "runes" : "8100-8112-8143-8138-8105-8200-8234-8237",
+        "runesWinRate" : 0.5613382899628253
+      },
+      "-L1hoRgdcmNVJMvPplXs" : {
+        "champId" : 78,
+        "champName" : "Poppy",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Poppy.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8138-8135-8000-9111-8014",
+        "runesWinRate" : 0.49137931034482757
+      },
+      "-L1hoRggdVELwwXtcIWx" : {
+        "champId" : 79,
+        "champName" : "Gragas",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Gragas.png",
+        "role" : "MIDDLE",
+        "runes" : "8100-8112-8143-8138-8134-8200-8237-8226",
+        "runesWinRate" : 0.5819672131147541
+      },
+      "-L1hoRgiO1o9wibKx8Xt" : {
+        "champId" : 133,
+        "champName" : "Quinn",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Quinn.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8112-8143-8138-8135-8000-9111-8014",
+        "runesWinRate" : 0.5437956204379562
+      },
+      "-L1hoRglnnA_l8ZIKtEO" : {
+        "champId" : 85,
+        "champName" : "Kennen",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Kennen.png",
+        "role" : "MIDDLE",
+        "runes" : "8100-8112-8126-8120-8135-8000-9111-8014",
+        "runesWinRate" : 0.5581395348837209
+      }
+    },
+    "8124" : {
+      "-L1hoReVIe7ki-F1Lp1U" : {
+        "champId" : 120,
+        "champName" : "Hecarim",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Hecarim.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8124-8126-8138-8105-8200-8243-8234",
+        "runesWinRate" : 0.5878378378378378
+      }
+    },
+    "8128" : {
+      "-L1hoRbobT_TzVHWnTw5" : {
+        "champId" : 141,
+        "champName" : "Kayn",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Kayn.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8128-8143-8138-8135-8200-8234-8243",
+        "runesWinRate" : 0.5867768595041323
+      },
+      "-L1hoRd121-kZxkAtEAT" : {
+        "champId" : 107,
+        "champName" : "Rengar",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Rengar.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8128-8143-8138-8135-8300-8306-8304",
+        "runesWinRate" : 0.5945945945945946
+      },
+      "-L1hoRdDgHuohS_FzZPA" : {
+        "champId" : 28,
+        "champName" : "Evelynn",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Evelynn.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8128-8143-8138-8105-8200-8232-8234",
+        "runesWinRate" : 0.6068376068376068
+      },
+      "-L1hoReMzm1nmJ9mCDgj" : {
+        "champId" : 76,
+        "champName" : "Nidalee",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Nidalee.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8128-8143-8136-8135-8000-9111-8014",
+        "runesWinRate" : 0.6229508196721312
+      },
+      "-L1hoRfmV80XbIMLBQRM" : {
+        "champId" : 62,
+        "champName" : "MonkeyKing",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/MonkeyKing.png",
+        "role" : "JUNGLE",
+        "runes" : "8100-8128-8143-8136-8105-8000-9111-8014",
+        "runesWinRate" : 0.573170731707317
+      }
+    }
+  },
+  "8200" : {
+    "8214" : {
+      "-L1hoRcE4XappgmiEpcv" : {
+        "champId" : 40,
+        "champName" : "Janna",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Janna.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8214-8226-8210-8232-8400-8429-8453",
+        "runesWinRate" : 0.6510067114093959
+      },
+      "-L1hoRcG3k7aO2qO9K5v" : {
+        "champId" : 117,
+        "champName" : "Lulu",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Lulu.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8214-8226-8210-8237-8300-8321-8313",
+        "runesWinRate" : 0.6287878787878788
+      },
+      "-L1hoRcIQ5A6XdigElvu" : {
+        "champId" : 267,
+        "champName" : "Nami",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Nami.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8214-8226-8234-8236-8400-8453-8430",
+        "runesWinRate" : 0.6454545454545455
+      },
+      "-L1hoRcatTvI-NWGdHV4" : {
+        "champId" : 119,
+        "champName" : "Draven",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Draven.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8200-8214-8226-8234-8237-8000-9103-8014",
+        "runesWinRate" : 0.608
+      },
+      "-L1hoRd5dG7IXj9ir6UH" : {
+        "champId" : 16,
+        "champName" : "Soraka",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Soraka.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8214-8226-8234-8237-8100-8139-8136",
+        "runesWinRate" : 0.635593220338983
+      },
+      "-L1hoRd6Nm7oZi_03x_p" : {
+        "champId" : 90,
+        "champName" : "Malzahar",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Malzahar.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8214-8226-8233-8237-8300-8304-8347",
+        "runesWinRate" : 0.6111111111111112
+      },
+      "-L1hoRd6Nm7oZi_03x_q" : {
+        "champId" : 43,
+        "champName" : "Karma",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Karma.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8214-8226-8210-8236-8300-8345-8321",
+        "runesWinRate" : 0.616
+      },
+      "-L1hoRddJnF-rF-Lp4Yu" : {
+        "champId" : 99,
+        "champName" : "Lux",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Lux.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8214-8226-8210-8237-8300-8313-8321",
+        "runesWinRate" : 0.6320754716981132
+      },
+      "-L1hoRdtzpqdf--mizoT" : {
+        "champId" : 38,
+        "champName" : "Kassadin",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Kassadin.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8214-8243-8210-8237-8100-8139-8135",
+        "runesWinRate" : 0.5789473684210527
+      },
+      "-L1hoRe7qPfU1AyIuUXf" : {
+        "champId" : 37,
+        "champName" : "Sona",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Sona.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8214-8226-8234-8236-8400-8429-8453",
+        "runesWinRate" : 0.6071428571428571
+      },
+      "-L1hoReVIe7ki-F1Lp1T" : {
+        "champId" : 8,
+        "champName" : "Vladimir",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Vladimir.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8214-8224-8234-8236-8100-8139-8135",
+        "runesWinRate" : 0.612
+      },
+      "-L1hoReYgOcR2XMuOqqT" : {
+        "champId" : 27,
+        "champName" : "Singed",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Singed.png",
+        "role" : "TOP",
+        "runes" : "8200-8214-8243-8234-8236-8400-8242-8430",
+        "runesWinRate" : 0.6466165413533834
+      },
+      "-L1hoRe__gOWaj5RXiUQ" : {
+        "champId" : 99,
+        "champName" : "Lux",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Lux.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8214-8226-8210-8237-8300-8345-8321",
+        "runesWinRate" : 0.5866666666666667
+      },
+      "-L1hoReqPJKF4aDjcJeb" : {
+        "champId" : 63,
+        "champName" : "Brand",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Brand.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8214-8226-8234-8237-8100-8126-8136",
+        "runesWinRate" : 0.5633802816901409
+      },
+      "-L1hoRf5d-nqHysdk40S" : {
+        "champId" : 112,
+        "champName" : "Viktor",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Viktor.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8214-8224-8210-8237-8000-9111-8014",
+        "runesWinRate" : 0.6
+      },
+      "-L1hoRfQrMvH56Txel4T" : {
+        "champId" : 85,
+        "champName" : "Kennen",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Kennen.png",
+        "role" : "TOP",
+        "runes" : "8200-8214-8243-8234-8237-8300-8304-8347",
+        "runesWinRate" : 0.6126126126126126
+      },
+      "-L1hoRfodI72aluHR2Ie" : {
+        "champId" : 126,
+        "champName" : "Jayce",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Jayce.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8214-8226-8234-8237-8100-8143-8105",
+        "runesWinRate" : 0.589041095890411
+      },
+      "-L1hoRfqSg0mTO0W3VXb" : {
+        "champId" : 26,
+        "champName" : "Zilean",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Zilean.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8214-8226-8210-8237-8300-8347-8345",
+        "runesWinRate" : 0.5945945945945946
+      },
+      "-L1hoRfy0RTcgU8ZMtwX" : {
+        "champId" : 69,
+        "champName" : "Cassiopeia",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Cassiopeia.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8214-8226-8234-8237-8100-8139-8135",
+        "runesWinRate" : 0.5660377358490566
+      },
+      "-L1hoRg5PF4ItXwFw4hH" : {
+        "champId" : 107,
+        "champName" : "Rengar",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Rengar.png",
+        "role" : "TOP",
+        "runes" : "8200-8214-8243-8210-8237-8100-8143-8135",
+        "runesWinRate" : 0.5689655172413793
+      },
+      "-L1hoRg7JpXrIaz9xtf9" : {
+        "champId" : 30,
+        "champName" : "Karthus",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Karthus.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8214-8243-8233-8237-8000-9111-8014",
+        "runesWinRate" : 0.5984848484848485
+      },
+      "-L1hoRg8nP_SvjtTbyMl" : {
+        "champId" : 3,
+        "champName" : "Galio",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Galio.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8214-8226-8210-8237-8000-9111-8014",
+        "runesWinRate" : 0.5569620253164557
+      },
+      "-L1hoRg9waMdXCoMUDE0" : {
+        "champId" : 50,
+        "champName" : "Swain",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Swain.png",
+        "role" : "TOP",
+        "runes" : "8200-8214-8243-8210-8237-8300-8313-8304",
+        "runesWinRate" : 0.5964125560538116
+      },
+      "-L1hoRgCTy7s2qT6W6Lm" : {
+        "champId" : 9,
+        "champName" : "Fiddlesticks",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Fiddlesticks.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8214-8226-8210-8237-8000-9111-8014",
+        "runesWinRate" : 0.6015625
+      },
+      "-L1hoRgEnPnqivxY-UdA" : {
+        "champId" : 43,
+        "champName" : "Karma",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Karma.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8214-8243-8210-8237-8300-8347-8345",
+        "runesWinRate" : 0.5767195767195767
+      },
+      "-L1hoRgI_SRNNSWphw7S" : {
+        "champId" : 82,
+        "champName" : "Mordekaiser",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Mordekaiser.png",
+        "role" : "TOP",
+        "runes" : "8200-8214-8243-8234-8237-8100-8135-8139",
+        "runesWinRate" : 0.56
+      },
+      "-L1hoRgkK3rdxptvhesl" : {
+        "champId" : 30,
+        "champName" : "Karthus",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Karthus.png",
+        "role" : "TOP",
+        "runes" : "8200-8214-8243-8210-8236-8300-8313-8347",
+        "runesWinRate" : 0.6470588235294118
+      }
+    },
+    "8229" : {
+      "-L1hoRbY5wUhX8FWUCh_" : {
+        "champId" : 202,
+        "champName" : "Jhin",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Jhin.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8200-8229-8226-8234-8236-8300-8313-8304",
+        "runesWinRate" : 0.5877862595419847
+      },
+      "-L1hoRbipjsTqIb97ALi" : {
+        "champId" : 21,
+        "champName" : "MissFortune",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/MissFortune.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8200-8229-8226-8233-8236-8100-8126-8138",
+        "runesWinRate" : 0.626984126984127
+      },
+      "-L1hoRcjTxz5iXLbWzf9" : {
+        "champId" : 61,
+        "champName" : "Orianna",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Orianna.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8226-8210-8236-8100-8138-8135",
+        "runesWinRate" : 0.68
+      },
+      "-L1hoRcozwz08QXsvcIn" : {
+        "champId" : 268,
+        "champName" : "Azir",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Azir.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8243-8210-8237-8000-9104-9111",
+        "runesWinRate" : 0.5929203539823009
+      },
+      "-L1hoRcsPTOB4Lci-VQH" : {
+        "champId" : 25,
+        "champName" : "Morgana",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Morgana.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8229-8226-8210-8236-8100-8136-8105",
+        "runesWinRate" : 0.5779816513761468
+      },
+      "-L1hoRdVEvOZbXXrMbij" : {
+        "champId" : 101,
+        "champName" : "Xerath",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Xerath.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8226-8210-8237-8100-8139-8138",
+        "runesWinRate" : 0.6271186440677966
+      },
+      "-L1hoRe0rXv6HWJklwus" : {
+        "champId" : 4,
+        "champName" : "TwistedFate",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/TwistedFate.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8226-8234-8237-8100-8139-8136",
+        "runesWinRate" : 0.6064516129032258
+      },
+      "-L1hoReHMf43pbZNb_f7" : {
+        "champId" : 101,
+        "champName" : "Xerath",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Xerath.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8229-8226-8210-8237-8100-8138-8105",
+        "runesWinRate" : 0.5652173913043478
+      },
+      "-L1hoReOr8KxBHlaheX5" : {
+        "champId" : 45,
+        "champName" : "Veigar",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Veigar.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8243-8234-8236-8300-8304-8347",
+        "runesWinRate" : 0.6586826347305389
+      },
+      "-L1hoReQug6w7SiYYUP4" : {
+        "champId" : 134,
+        "champName" : "Syndra",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Syndra.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8226-8210-8237-8300-8345-8304",
+        "runesWinRate" : 0.5868263473053892
+      },
+      "-L1hoReWRAWyI-HLt_O4" : {
+        "champId" : 245,
+        "champName" : "Ekko",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Ekko.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8243-8234-8237-8100-8143-8134",
+        "runesWinRate" : 0.6179245283018868
+      },
+      "-L1hoReXw-yQibJlX1mi" : {
+        "champId" : 21,
+        "champName" : "MissFortune",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/MissFortune.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8229-8226-8210-8236-8100-8126-8136",
+        "runesWinRate" : 0.524390243902439
+      },
+      "-L1hoReZ2vUv6eFfylOz" : {
+        "champId" : 143,
+        "champName" : "Zyra",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Zyra.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8229-8243-8210-8236-8300-8321-8347",
+        "runesWinRate" : 0.5873015873015873
+      },
+      "-L1hoRealkl7CAt8QE2C" : {
+        "champId" : 142,
+        "champName" : "Zoe",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Zoe.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8229-8226-8233-8237-8100-8143-8136",
+        "runesWinRate" : 0.5172413793103449
+      },
+      "-L1hoRef8iwdWNKXWMjq" : {
+        "champId" : 163,
+        "champName" : "Taliyah",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Taliyah.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8226-8234-8236-8000-9111-8014",
+        "runesWinRate" : 0.5757575757575758
+      },
+      "-L1hoRen_F_M31tqiHvn" : {
+        "champId" : 25,
+        "champName" : "Morgana",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Morgana.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8226-8210-8236-8300-8345-8347",
+        "runesWinRate" : 0.6554621848739496
+      },
+      "-L1hoReoB9F6_Y-ozukb" : {
+        "champId" : 34,
+        "champName" : "Anivia",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Anivia.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8243-8210-8236-8300-8313-8304",
+        "runesWinRate" : 0.6363636363636364
+      },
+      "-L1hoReyWEK-ByhSWO3X" : {
+        "champId" : 68,
+        "champName" : "Rumble",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Rumble.png",
+        "role" : "TOP",
+        "runes" : "8200-8229-8224-8234-8237-8300-8304-8313",
+        "runesWinRate" : 0.5846153846153846
+      },
+      "-L1hoRezQRVNzFnDdSsG" : {
+        "champId" : 161,
+        "champName" : "Velkoz",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Velkoz.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8243-8210-8237-8000-8009-8014",
+        "runesWinRate" : 0.64
+      },
+      "-L1hoRf-QdzTPOBRrPrC" : {
+        "champId" : 115,
+        "champName" : "Ziggs",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Ziggs.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8226-8210-8236-8300-8321-8347",
+        "runesWinRate" : 0.6307692307692307
+      },
+      "-L1hoRfJsHTdC9GrH7Tj" : {
+        "champId" : 1,
+        "champName" : "Annie",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Annie.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8226-8234-8237-8300-8313-8347",
+        "runesWinRate" : 0.5963302752293578
+      },
+      "-L1hoRfwSgCPhpwPgV9l" : {
+        "champId" : 161,
+        "champName" : "Velkoz",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Velkoz.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8229-8226-8210-8237-8000-8009-8014",
+        "runesWinRate" : 0.59375
+      },
+      "-L1hoRg2FAGeDHHJuEsz" : {
+        "champId" : 74,
+        "champName" : "Heimerdinger",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Heimerdinger.png",
+        "role" : "TOP",
+        "runes" : "8200-8229-8226-8210-8236-8300-8313-8304",
+        "runesWinRate" : 0.5795454545454546
+      },
+      "-L1hoRg66iqx7bbUcPh4" : {
+        "champId" : 127,
+        "champName" : "Lissandra",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Lissandra.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8243-8210-8237-8300-8304-8347",
+        "runesWinRate" : 0.5859375
+      },
+      "-L1hoRg7JpXrIaz9xtfA" : {
+        "champId" : 63,
+        "champName" : "Brand",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Brand.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8243-8210-8237-8000-9111-8014",
+        "runesWinRate" : 0.5358255451713395
+      },
+      "-L1hoRgAy8nXhLxANVj8" : {
+        "champId" : 9,
+        "champName" : "Fiddlesticks",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Fiddlesticks.png",
+        "role" : "JUNGLE",
+        "runes" : "8200-8229-8243-8210-8237-8300-8347-8313",
+        "runesWinRate" : 0.5346534653465347
+      },
+      "-L1hoRgB-1p7U15x2Qkc" : {
+        "champId" : 74,
+        "champName" : "Heimerdinger",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Heimerdinger.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8226-8234-8237-8300-8313-8347",
+        "runesWinRate" : 0.6123595505617978
+      },
+      "-L1hoRgCTy7s2qT6W6Ln" : {
+        "champId" : 45,
+        "champName" : "Veigar",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Veigar.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8229-8226-8210-8236-8300-8304-8347",
+        "runesWinRate" : 0.53125
+      },
+      "-L1hoRgH4pu74ERX38Vy" : {
+        "champId" : 2,
+        "champName" : "Olaf",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Olaf.png",
+        "role" : "JUNGLE",
+        "runes" : "8200-8229-8226-8234-8237-8000-9111-8014",
+        "runesWinRate" : 0.5469879518072289
+      },
+      "-L1hoRgJEcbfg7x0OGZc" : {
+        "champId" : 26,
+        "champName" : "Zilean",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Zilean.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8226-8210-8237-8300-8321-8347",
+        "runesWinRate" : 0.625
+      },
+      "-L1hoRgKHJvtvZL7Fx-E" : {
+        "champId" : 1,
+        "champName" : "Annie",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Annie.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8229-8226-8210-8237-8300-8321-8347",
+        "runesWinRate" : 0.5384615384615384
+      },
+      "-L1hoRgNH3Tj4fuuD-To" : {
+        "champId" : 14,
+        "champName" : "Sion",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Sion.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8229-8226-8234-8237-8300-8304-8347",
+        "runesWinRate" : 0.5642857142857143
+      },
+      "-L1hoRgOsDTO8uUEXi4U" : {
+        "champId" : 54,
+        "champName" : "Malphite",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Malphite.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8229-8226-8233-8237-8000-9111-8014",
+        "runesWinRate" : 0.5206611570247934
+      },
+      "-L1hoRgSh6DBJH90opYJ" : {
+        "champId" : 50,
+        "champName" : "Swain",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Swain.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8243-8234-8237-8300-8313-8304",
+        "runesWinRate" : 0.5796344647519582
+      },
+      "-L1hoRgUscsbe5EGEWey" : {
+        "champId" : 143,
+        "champName" : "Zyra",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Zyra.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8226-8210-8237-8300-8313-8304",
+        "runesWinRate" : 0.5754716981132075
+      },
+      "-L1hoRgaJZVWbJo9oJYR" : {
+        "champId" : 9,
+        "champName" : "Fiddlesticks",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Fiddlesticks.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8229-8243-8210-8236-8300-8313-8347",
+        "runesWinRate" : 0.5764705882352941
+      },
+      "-L1hoRgdcmNVJMvPplXr" : {
+        "champId" : 127,
+        "champName" : "Lissandra",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Lissandra.png",
+        "role" : "TOP",
+        "runes" : "8200-8229-8243-8210-8237-8000-9111-8014",
+        "runesWinRate" : 0.5692307692307692
+      },
+      "-L1hoRgkK3rdxptvhesk" : {
+        "champId" : 3,
+        "champName" : "Galio",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Galio.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8200-8229-8226-8210-8236-8100-8138-8105",
+        "runesWinRate" : 0.42160278745644597
+      },
+      "-L1hoRgmjw8q4F6Utovy" : {
+        "champId" : 20,
+        "champName" : "Nunu",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Nunu.png",
+        "role" : "TOP",
+        "runes" : "8200-8229-8226-8210-8237-8400-8429-8446",
+        "runesWinRate" : 0.4782608695652174
+      }
+    },
+    "8230" : {
+      "-L1hoRdEbXKRqG3y31mt" : {
+        "champId" : 122,
+        "champName" : "Darius",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Darius.png",
+        "role" : "TOP",
+        "runes" : "8200-8230-8224-8234-8236-8000-8014-9104",
+        "runesWinRate" : 0.6228070175438597
+      },
+      "-L1hoReS7Iqpvl_ZU2G3" : {
+        "champId" : 86,
+        "champName" : "Garen",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Garen.png",
+        "role" : "TOP",
+        "runes" : "8200-8230-8243-8234-8236-8400-8429-8451",
+        "runesWinRate" : 0.6068376068376068
+      },
+      "-L1hoRgEnPnqivxY-Ud9" : {
+        "champId" : 136,
+        "champName" : "AurelionSol",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/AurelionSol.png",
+        "role" : "MIDDLE",
+        "runes" : "8200-8230-8243-8234-8232-8000-8009-8014",
+        "runesWinRate" : 0.6384615384615384
+      },
+      "-L1hoRgFxqvN3VjKoMNG" : {
+        "champId" : 13,
+        "champName" : "Ryze",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Ryze.png",
+        "role" : "TOP",
+        "runes" : "8200-8230-8226-8210-8236-8300-8345-8347",
+        "runesWinRate" : 0.5909090909090909
+      }
+    }
+  },
+  "8300" : {
+    "8326" : {
+      "-L1hoRePnm2sDBu4DkMS" : {
+        "champId" : 13,
+        "champName" : "Ryze",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Ryze.png",
+        "role" : "MIDDLE",
+        "runes" : "8300-8326-8313-8304-8347-8200-8234-8237",
+        "runesWinRate" : 0.5714285714285714
+      },
+      "-L1hoRewZwfRhXJmwuwP" : {
+        "champId" : 79,
+        "champName" : "Gragas",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Gragas.png",
+        "role" : "JUNGLE",
+        "runes" : "8300-8326-8345-8321-8347-8400-8451-8430",
+        "runesWinRate" : 0.5490196078431373
+      }
+    },
+    "8359" : {
+      "-L1hoRb_6HcP4QUHPuBz" : {
+        "champId" : 81,
+        "champName" : "Ezreal",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Ezreal.png",
+        "role" : "DUO_CARRY",
+        "runes" : "8300-8359-8313-8304-8347-8000-8014-9104",
+        "runesWinRate" : 0.6130434782608696
+      },
+      "-L1hoRc6kbv712UTUpRN" : {
+        "champId" : 92,
+        "champName" : "Riven",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Riven.png",
+        "role" : "TOP",
+        "runes" : "8300-8359-8313-8304-8347-8200-8210-8243",
+        "runesWinRate" : 0.652542372881356
+      },
+      "-L1hoRd0DzX1WTOMNx0J" : {
+        "champId" : 17,
+        "champName" : "Teemo",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Teemo.png",
+        "role" : "TOP",
+        "runes" : "8300-8359-8313-8304-8347-8100-8139-8135",
+        "runesWinRate" : 0.6282973621103117
+      },
+      "-L1hoRd4kg5eUt_pbjuh" : {
+        "champId" : 75,
+        "champName" : "Nasus",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Nasus.png",
+        "role" : "TOP",
+        "runes" : "8300-8359-8345-8304-8347-8400-8430-8453",
+        "runesWinRate" : 0.6132075471698113
+      },
+      "-L1hoRd_d6cOfAJGPtG7" : {
+        "champId" : 114,
+        "champName" : "Fiora",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Fiora.png",
+        "role" : "TOP",
+        "runes" : "8300-8359-8313-8304-8347-8200-8234-8237",
+        "runesWinRate" : 0.6982758620689655
+      },
+      "-L1hoReF6Kto_ygG827e" : {
+        "champId" : 420,
+        "champName" : "Illaoi",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Illaoi.png",
+        "role" : "TOP",
+        "runes" : "8300-8359-8345-8304-8347-8200-8226-8234",
+        "runesWinRate" : 0.6122448979591837
+      },
+      "-L1hoReGDi0deBeHH06H" : {
+        "champId" : 24,
+        "champName" : "Jax",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Jax.png",
+        "role" : "TOP",
+        "runes" : "8300-8359-8345-8321-8347-8200-8234-8237",
+        "runesWinRate" : 0.6273291925465838
+      },
+      "-L1hoRepYOZVB9su9RuG" : {
+        "champId" : 8,
+        "champName" : "Vladimir",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Vladimir.png",
+        "role" : "TOP",
+        "runes" : "8300-8359-8313-8304-8347-8200-8210-8236",
+        "runesWinRate" : 0.6439393939393939
+      },
+      "-L1hoRg3I24Mxb1odKFf" : {
+        "champId" : 17,
+        "champName" : "Teemo",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Teemo.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8300-8359-8345-8304-8347-8200-8243-8210",
+        "runesWinRate" : 0.6415094339622641
+      },
+      "-L1hoRg4AAdF3gAK587Y" : {
+        "champId" : 41,
+        "champName" : "Gangplank",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Gangplank.png",
+        "role" : "MIDDLE",
+        "runes" : "8300-8359-8345-8304-8347-8200-8237-8210",
+        "runesWinRate" : 0.6302521008403361
+      },
+      "-L1hoRgG30At0SWzd4kC" : {
+        "champId" : 77,
+        "champName" : "Udyr",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Udyr.png",
+        "role" : "TOP",
+        "runes" : "8300-8359-8345-8321-8347-8400-8242-8430",
+        "runesWinRate" : 0.5723270440251572
+      }
+    }
+  },
+  "8400" : {
+    "8437" : {
+      "-L1hoRcPC7L8d7fGYUMJ" : {
+        "champId" : 41,
+        "champName" : "Gangplank",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Gangplank.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8446-8430-8444-8200-8237-8210",
+        "runesWinRate" : 0.628140703517588
+      },
+      "-L1hoRd3rfBg7JYa4IvZ" : {
+        "champId" : 516,
+        "champName" : "Ornn",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Ornn.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8446-8430-8444-8200-8237-8243",
+        "runesWinRate" : 0.5749128919860628
+      },
+      "-L1hoRdU6bT4dVw9NP19" : {
+        "champId" : 150,
+        "champName" : "Gnar",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Gnar.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8446-8430-8451-8000-9111-9104",
+        "runesWinRate" : 0.6078431372549019
+      },
+      "-L1hoRe4HhmT5pR8i5Pq" : {
+        "champId" : 98,
+        "champName" : "Shen",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Shen.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8463-8429-8453-8000-9111-9105",
+        "runesWinRate" : 0.6086956521739131
+      },
+      "-L1hoReNfLqYhWwR9w1b" : {
+        "champId" : 54,
+        "champName" : "Malphite",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Malphite.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8463-8429-8444-8300-8345-8304",
+        "runesWinRate" : 0.6544117647058824
+      },
+      "-L1hoRebBengpzjqE6iz" : {
+        "champId" : 14,
+        "champName" : "Sion",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Sion.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8446-8429-8444-8200-8226-8210",
+        "runesWinRate" : 0.5882352941176471
+      },
+      "-L1hoRen_F_M31tqiHvo" : {
+        "champId" : 83,
+        "champName" : "Yorick",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Yorick.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8446-8429-8451-8000-9111-8299",
+        "runesWinRate" : 0.5974025974025974
+      },
+      "-L1hoReoB9F6_Y-ozuka" : {
+        "champId" : 31,
+        "champName" : "Chogath",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Chogath.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8463-8429-8451-8200-8243-8237",
+        "runesWinRate" : 0.5923344947735192
+      },
+      "-L1hoRfNcWfHH-ZhGnIa" : {
+        "champId" : 78,
+        "champName" : "Poppy",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Poppy.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8242-8429-8444-8000-9105-9111",
+        "runesWinRate" : 0.5770750988142292
+      },
+      "-L1hoRfZH_-zzHgAY4lB" : {
+        "champId" : 48,
+        "champName" : "Trundle",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Trundle.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8446-8429-8453-8000-9104-8014",
+        "runesWinRate" : 0.6574074074074074
+      },
+      "-L1hoRg2FAGeDHHJuEt-" : {
+        "champId" : 36,
+        "champName" : "DrMundo",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/DrMundo.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8446-8429-8444-8300-8304-8410",
+        "runesWinRate" : 0.6125461254612546
+      },
+      "-L1hoRgB-1p7U15x2Qkd" : {
+        "champId" : 223,
+        "champName" : "TahmKench",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/TahmKench.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8446-8429-8444-8000-9104-9111",
+        "runesWinRate" : 0.5841584158415841
+      },
+      "-L1hoRgMtpLYt3_eRCJv" : {
+        "champId" : 31,
+        "champName" : "Chogath",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Chogath.png",
+        "role" : "JUNGLE",
+        "runes" : "8400-8437-8446-8429-8451-8000-9111-9105",
+        "runesWinRate" : 0.5764705882352941
+      },
+      "-L1hoRgfNQJOvkDVBzTB" : {
+        "champId" : 106,
+        "champName" : "Volibear",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Volibear.png",
+        "role" : "TOP",
+        "runes" : "8400-8437-8242-8430-8451-8200-8224-8237",
+        "runesWinRate" : 0.5044534412955466
+      },
+      "-L1hoRgjH7nGAmmmD0cQ" : {
+        "champId" : 48,
+        "champName" : "Trundle",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Trundle.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8437-8463-8430-8444-8300-8345-8410",
+        "runesWinRate" : 0.519774011299435
+      }
+    },
+    "8439" : {
+      "-L1hoRc23oLnPf0Dc0_a" : {
+        "champId" : 89,
+        "champName" : "Leona",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Leona.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8439-8463-8429-8451-8200-8234-8243",
+        "runesWinRate" : 0.6343283582089553
+      },
+      "-L1hoRc4jYIm3g9Gntc9" : {
+        "champId" : 53,
+        "champName" : "Blitzcrank",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Blitzcrank.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8439-8463-8429-8444-8300-8321-8410",
+        "runesWinRate" : 0.632183908045977
+      },
+      "-L1hoRdRqF1BT-041Lq-" : {
+        "champId" : 33,
+        "champName" : "Rammus",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Rammus.png",
+        "role" : "JUNGLE",
+        "runes" : "8400-8439-8463-8429-8451-8200-8234-8243",
+        "runesWinRate" : 0.6442307692307693
+      },
+      "-L1hoRdS_jD1yFzYChgy" : {
+        "champId" : 57,
+        "champName" : "Maokai",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Maokai.png",
+        "role" : "TOP",
+        "runes" : "8400-8439-8446-8429-8444-8200-8243-8237",
+        "runesWinRate" : 0.6086956521739131
+      },
+      "-L1hoRdb-CCm9F_nun1K" : {
+        "champId" : 113,
+        "champName" : "Sejuani",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Sejuani.png",
+        "role" : "JUNGLE",
+        "runes" : "8400-8439-8242-8429-8444-8300-8304-8347",
+        "runesWinRate" : 0.6811594202898551
+      },
+      "-L1hoRemfAh6JB2HDJFI" : {
+        "champId" : 154,
+        "champName" : "Zac",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Zac.png",
+        "role" : "JUNGLE",
+        "runes" : "8400-8439-8463-8429-8453-8100-8143-8135",
+        "runesWinRate" : 0.6149732620320856
+      },
+      "-L1hoRfMMP68JZRViK1B" : {
+        "champId" : 32,
+        "champName" : "Amumu",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Amumu.png",
+        "role" : "JUNGLE",
+        "runes" : "8400-8439-8463-8429-8444-8000-9111-9105",
+        "runesWinRate" : 0.6036866359447005
+      },
+      "-L1hoRfiB5UKjq70QL08" : {
+        "champId" : 98,
+        "champName" : "Shen",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Shen.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8439-8463-8429-8444-8300-8339-8304",
+        "runesWinRate" : 0.6344827586206897
+      },
+      "-L1hoRfvu5oqjkc4CWif" : {
+        "champId" : 111,
+        "champName" : "Nautilus",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Nautilus.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8439-8463-8430-8451-8300-8321-8347",
+        "runesWinRate" : 0.6074766355140186
+      },
+      "-L1hoRg8nP_SvjtTbyMm" : {
+        "champId" : 57,
+        "champName" : "Maokai",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Maokai.png",
+        "role" : "JUNGLE",
+        "runes" : "8400-8439-8463-8429-8444-8100-8126-8105",
+        "runesWinRate" : 0.616
+      },
+      "-L1hoRgJEcbfg7x0OGZd" : {
+        "champId" : 106,
+        "champName" : "Volibear",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Volibear.png",
+        "role" : "JUNGLE",
+        "runes" : "8400-8439-8242-8429-8444-8000-9111-9104",
+        "runesWinRate" : 0.6063829787234043
+      },
+      "-L1hoRgKHJvtvZL7Fx-D" : {
+        "champId" : 72,
+        "champName" : "Skarner",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Skarner.png",
+        "role" : "JUNGLE",
+        "runes" : "8400-8439-8463-8429-8451-8200-8243-8234",
+        "runesWinRate" : 0.6106194690265486
+      },
+      "-L1hoRgOsDTO8uUEXi4T" : {
+        "champId" : 111,
+        "champName" : "Nautilus",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Nautilus.png",
+        "role" : "TOP",
+        "runes" : "8400-8439-8446-8429-8444-8200-8226-8237",
+        "runesWinRate" : 0.5802469135802469
+      },
+      "-L1hoRgeRtrhbULBesAY" : {
+        "champId" : 78,
+        "champName" : "Poppy",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Poppy.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8439-8463-8429-8451-8100-8136-8126",
+        "runesWinRate" : 0.47058823529411764
+      },
+      "-L1hoRgfNQJOvkDVBzTA" : {
+        "champId" : 79,
+        "champName" : "Gragas",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Gragas.png",
+        "role" : "TOP",
+        "runes" : "8400-8439-8463-8429-8444-8200-8243-8210",
+        "runesWinRate" : 0.4925373134328358
+      }
+    },
+    "8465" : {
+      "-L1hoRbbVEn1ptDIWVDF" : {
+        "champId" : 412,
+        "champName" : "Thresh",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Thresh.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8465-8463-8429-8444-8300-8321-8345",
+        "runesWinRate" : 0.6149870801033591
+      },
+      "-L1hoRcOfPBiaSOUuPal" : {
+        "champId" : 12,
+        "champName" : "Alistar",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Alistar.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8465-8463-8429-8444-8300-8345-8321",
+        "runesWinRate" : 0.6475409836065574
+      },
+      "-L1hoRdA0UNuf4831hdq" : {
+        "champId" : 497,
+        "champName" : "Rakan",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Rakan.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8465-8463-8429-8444-8300-8347-8304",
+        "runesWinRate" : 0.6066666666666667
+      },
+      "-L1hoRdKORS281TmgXZM" : {
+        "champId" : 201,
+        "champName" : "Braum",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Braum.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8465-8463-8430-8451-8300-8410-8304",
+        "runesWinRate" : 0.6349206349206349
+      },
+      "-L1hoReTFfJX8aywIdlz" : {
+        "champId" : 44,
+        "champName" : "Taric",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Taric.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8465-8463-8429-8453-8300-8321-8345",
+        "runesWinRate" : 0.6408450704225352
+      },
+      "-L1hoReeCaydJh8w5VdP" : {
+        "champId" : 223,
+        "champName" : "TahmKench",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/TahmKench.png",
+        "role" : "DUO_SUPPORT",
+        "runes" : "8400-8465-8463-8429-8444-8200-8226-8210",
+        "runesWinRate" : 0.5981308411214953
+      },
+      "-L1hoRgAy8nXhLxANVj9" : {
+        "champId" : 427,
+        "champName" : "Ivern",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Ivern.png",
+        "role" : "JUNGLE",
+        "runes" : "8400-8465-8463-8429-8453-8300-8339-8304",
+        "runesWinRate" : 0.6
+      },
+      "-L1hoRgL2E5_YJNrVTB3" : {
+        "champId" : 20,
+        "champName" : "Nunu",
+        "champeImg" : "https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/Nunu.png",
+        "role" : "JUNGLE",
+        "runes" : "8400-8465-8463-8429-8444-8200-8234-8232",
+        "runesWinRate" : 0.6011560693641619
+      }
+    }
+  }
+}
