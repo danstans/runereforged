@@ -1,6 +1,6 @@
 # Runes Reforged Tool
 
-### Runes reforged tool is created for the Riot API contest 2017. You can view a working demo at [this URL.](https://runesreforged-87f0f.firebaseapp.com/)
+### Runes reforged tool is created for the Riot API contest 2017. You can view a working demo at [this URL.](https://danstans.github.io/RunesReforgedTool/)
 
 This project is a recreation of the new rune creator that can be viewed in the client. I wanted to recreate this tool so that other developers can utilize it for their own ideas. This will allow developers to create unique experience that help educate the community about the new runes system.
 
