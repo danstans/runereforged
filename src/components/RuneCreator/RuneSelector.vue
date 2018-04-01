@@ -12,19 +12,19 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
-  import BackButton from './RuneSelector/BackButton'
-  import PrimaryRunes from './RuneSelector/PrimaryRunes'
-  import SecondaryRunes from './RuneSelector/SecondaryRunes'
-  export default {
-    name: 'RuneSelector',
-    components: { BackButton, PrimaryRunes, SecondaryRunes },
-    computed: {
-      ...mapGetters([
-        'getBackgroundImg'
-      ])
-    }
+import { mapGetters } from 'vuex'
+import BackButton from './RuneSelector/BackButton'
+import PrimaryRunes from './RuneSelector/PrimaryRunes'
+import SecondaryRunes from './RuneSelector/SecondaryRunes'
+export default {
+  name: 'RuneSelector',
+  components: { BackButton, PrimaryRunes, SecondaryRunes },
+  computed: {
+    ...mapGetters([
+      'getBackgroundImg'
+    ])
   }
+}
 </script>
 
 <style lang="scss"  scoped>

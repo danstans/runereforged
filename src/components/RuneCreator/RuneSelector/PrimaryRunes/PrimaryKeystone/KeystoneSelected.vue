@@ -12,15 +12,15 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
-  export default {
-    name: 'KeystoneSelected',
-    computed: {
-      ...mapGetters([
-        'getKeystoneSelected'
-      ])
-    }
+import { mapGetters } from 'vuex'
+export default {
+  name: 'KeystoneSelected',
+  computed: {
+    ...mapGetters([
+      'getKeystoneSelected'
+    ])
   }
+}
 </script>
 
 <style lang="scss" scoped>

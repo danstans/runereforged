@@ -17,15 +17,15 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
-  export default {
-    name: 'SvgBorder',
-    computed: {
-      ...mapGetters([
-        'getPrimaryColor'
-      ])
-    }
+import { mapGetters } from 'vuex'
+export default {
+  name: 'SvgBorder',
+  computed: {
+    ...mapGetters([
+      'getPrimaryColor'
+    ])
   }
+}
 </script>
 
 <style scoped>

@@ -7,26 +7,26 @@
 </template>
 
 <script>
-  import { mapActions } from 'vuex'
-  export default {
-    name: 'BackButton',
-    methods: {
-      ...mapActions([
-        'resetState',
-        'resetKeystone',
-        'resetTier',
-        'resetSecondaryRunes',
-        'resetRunePath'
-      ]),
-      reset: function () {
-        this.resetState()
-        this.resetKeystone()
-        this.resetTier()
-        this.resetSecondaryRunes()
-        this.resetRunePath()
-      }
+import { mapActions } from 'vuex'
+export default {
+  name: 'BackButton',
+  methods: {
+    ...mapActions([
+      'resetState',
+      'resetKeystone',
+      'resetTier',
+      'resetSecondaryRunes',
+      'resetRunePath'
+    ]),
+    reset: function () {
+      this.resetState()
+      this.resetKeystone()
+      this.resetTier()
+      this.resetSecondaryRunes()
+      this.resetRunePath()
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>

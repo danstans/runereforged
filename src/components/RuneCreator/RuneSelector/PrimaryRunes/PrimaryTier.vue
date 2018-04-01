@@ -2,7 +2,7 @@
   <div class="primary-tier">
     <div class="tier-image" @click="toggleClicked()">
       <div class="border-circle">
-        <img v-if="getTierRunes[tierLevel]" :src="getTierRunes[tierLevel].runeImg" alt="">        
+        <img v-if="getTierRunes[tierLevel]" :src="getTierRunes[tierLevel].runeImg" alt="">
         <svg class="svg-inner" viewBox="0 0 47 47">
           <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#keystone-gradient)"></circle>
         </svg>
@@ -13,7 +13,7 @@
           <path fill="none" stroke-linecap="round" stroke-width="2px" stroke="url(#gradient-white-transparent)" d="M 23.5 1 A 22.5 22.5 0 0 0 23.5 46"></path>
           <ellipse cx="50%" cy="1px" fill="#fff" rx="5" ry="2"></ellipse>
         </svg>
-      </div> 
+      </div>
       <svg class="svg-outer-circle" viewBox="0 0 47 47">
         <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#keystone-gradient)"></circle>
       </svg>
@@ -41,39 +41,39 @@
 </template>
 
 <script>
-  import { mapGetters, mapActions } from 'vuex'
-  export default {
-    name: 'PrimaryTier',
-    computed: {
-      ...mapGetters([
-        'getTierRunes',
-        'getPrimaryColor'
-      ])
+import { mapGetters, mapActions } from 'vuex'
+export default {
+  name: 'PrimaryTier',
+  computed: {
+    ...mapGetters([
+      'getTierRunes',
+      'getPrimaryColor'
+    ])
+  },
+  data () {
+    return {
+      buttonClicked: false
+    }
+  },
+  props: [ 'possibleRunes', 'tierLevel' ],
+  methods: {
+    ...mapActions([
+      'updateTierRunes',
+      'updatePrimaryTiers'
+    ]),
+    selectTierRune: function (tier, rune) {
+      this.updateTierRunes({tier: tier, runes: rune})
+      this.updatePrimaryTiers({tier: tier, runes: rune})
     },
-    data () {
-      return {
-        buttonClicked: false
-      }
-    },
-    props: [ 'possibleRunes', 'tierLevel' ],
-    methods: {
-      ...mapActions([
-        'updateTierRunes',
-        'updatePrimaryTiers'
-      ]),
-      selectTierRune: function (tier, rune) {
-        this.updateTierRunes({tier: tier, runes: rune})
-        this.updatePrimaryTiers({tier: tier, runes: rune})
-      },
-      toggleClicked: function (val) {
-        if (val == null) {
-          this.buttonClicked = !this.buttonClicked
-        } else {
-          this.buttonClicked = val
-        }
+    toggleClicked: function (val) {
+      if (val == null) {
+        this.buttonClicked = !this.buttonClicked
+      } else {
+        this.buttonClicked = val
       }
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>

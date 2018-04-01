@@ -35,37 +35,37 @@
 </template>
 
 <script>
-  import { mapGetters, mapActions } from 'vuex'
-  import _ from 'lodash'
-  export default {
-    name: 'ChampList',
-    computed: {
-      ...mapGetters([
-        'getRunePath',
-        'getChampionList'
-      ]),
-      sortedChampList: function () {
-        // return this.getChampionList
-        return _.orderBy(this.getChampionList, 'runesWinRate', 'desc')
-      }
-    },
-    methods: {
-      ...mapActions([
-        'updateChampList'
-      ])
-    },
-    watch: {
-      'getRunePath': {
-        handler: function (after, before) {
-          if (after) {
-            this.updateChampList()
-          } else {
-            this.updateChampList('reset')
-          }
+import { mapGetters, mapActions } from 'vuex'
+import _ from 'lodash'
+export default {
+  name: 'ChampList',
+  computed: {
+    ...mapGetters([
+      'getRunePath',
+      'getChampionList'
+    ]),
+    sortedChampList: function () {
+      // return this.getChampionList
+      return _.orderBy(this.getChampionList, 'runesWinRate', 'desc')
+    }
+  },
+  methods: {
+    ...mapActions([
+      'updateChampList'
+    ])
+  },
+  watch: {
+    'getRunePath': {
+      handler: function (after, before) {
+        if (after) {
+          this.updateChampList()
+        } else {
+          this.updateChampList('reset')
         }
       }
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -117,7 +117,7 @@
       }
 
       .champ-meta {
-      
+
         width: 130px;
         height: 100%;
         display: flex;
@@ -129,7 +129,6 @@
           flex-direction: column;
           justify-content: space-between;
           height: 48px;
-          
 
           >span {
             font-size: 1rem;

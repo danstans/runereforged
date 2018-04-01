@@ -6,16 +6,16 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
-  export default {
-    name: 'RuneSelected',
-    computed: {
-      ...mapGetters([
-        'getSecondaryPathColor',
-        'getSecondaryPathSelected'
-      ])
-    }
+import { mapGetters } from 'vuex'
+export default {
+  name: 'RuneSelected',
+  computed: {
+    ...mapGetters([
+      'getSecondaryPathColor',
+      'getSecondaryPathSelected'
+    ])
   }
+}
 </script>
 
 <style lang="scss" scoped>

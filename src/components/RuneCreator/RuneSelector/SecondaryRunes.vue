@@ -23,7 +23,7 @@
                 <path fill="none" stroke-linecap="round" stroke-width="2px" stroke="url(#gradient-white-transparent)" d="M 23.5 1 A 22.5 22.5 0 0 0 23.5 46"></path>
                 <ellipse cx="50%" cy="1px" fill="#fff" rx="5" ry="2"></ellipse>
               </svg>
-            </div> 
+            </div>
             <svg class="svg-outer-circle" viewBox="0 0 47 47">
               <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
             </svg>
@@ -43,7 +43,7 @@
                 <path fill="none" stroke-linecap="round" stroke-width="2px" stroke="url(#gradient-white-transparent)" d="M 23.5 1 A 22.5 22.5 0 0 0 23.5 46"></path>
                 <ellipse cx="50%" cy="1px" fill="#fff" rx="5" ry="2"></ellipse>
               </svg>
-            </div> 
+            </div>
             <svg class="svg-outer-circle" viewBox="0 0 47 47">
               <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
             </svg>
@@ -58,11 +58,11 @@
                 </linearGradient>
                 <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
               </svg>
-            </div> 
+            </div>
             <svg class="svg-outer-circle" viewBox="0 0 47 47">
               <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
             </svg>
-            <img :src="tier.runeImg" alt="">          
+            <img :src="tier.runeImg" alt="">
           </div>
           <div class="secondary-rune-selected">
             <div class="border-circle">
@@ -79,7 +79,7 @@
                 <path fill="none" stroke-linecap="round" stroke-width="2px" stroke="url(#gradient-white-transparent)" d="M 23.5 1 A 22.5 22.5 0 0 0 23.5 46"></path>
                 <ellipse cx="50%" cy="1px" fill="#fff" rx="5" ry="2"></ellipse>
               </svg>
-            </div> 
+            </div>
             <svg class="svg-outer-circle" viewBox="0 0 47 47">
               <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
             </svg>
@@ -94,11 +94,11 @@
                 </linearGradient>
                 <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
               </svg>
-            </div> 
+            </div>
             <svg class="svg-outer-circle" viewBox="0 0 47 47">
               <circle cx="23.5" cy="23.5" r="22.5" stroke-width="2" fill="none" stroke="url(#secondary-keystone-gradient)"></circle>
             </svg>
-            <img :src="tier.runeImg" alt="">          
+            <img :src="tier.runeImg" alt="">
           </div>
         </template>
       </div>
@@ -125,59 +125,59 @@
           <div class="rune-name" :style="{color: getSecondaryPathColor}">{{tier.runeName}}</div>
           <div class="rune-description">{{tier.runeDescription}}</div>
         </div>
-      </div>  
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-  import { mapGetters, mapActions } from 'vuex'
-  import PathImg from './SecondaryRunes/PathImg'
-  import RuneSelector from './SecondaryRunes/RuneSelector'
-  import RuneSelected from './SecondaryRunes/RuneSelected'
-  export default {
-    name: 'secondaryRunes',
-    components: { PathImg, RuneSelector, RuneSelected },
-    data () {
-      return {
-        secondaryPathClicked: false,
-        showRunes: false
+import { mapGetters, mapActions } from 'vuex'
+import PathImg from './SecondaryRunes/PathImg'
+import RuneSelector from './SecondaryRunes/RuneSelector'
+import RuneSelected from './SecondaryRunes/RuneSelected'
+export default {
+  name: 'secondaryRunes',
+  components: { PathImg, RuneSelector, RuneSelected },
+  data () {
+    return {
+      secondaryPathClicked: false,
+      showRunes: false
+    }
+  },
+  computed: {
+    ...mapGetters([
+      'getSecondaryPathColor',
+      'getSecondaryPathSelected',
+      'getSecondaryTiers',
+      'getTwoRunesSelected',
+      'getSecondaryNumRunes'
+    ])
+  },
+  methods: {
+    ...mapActions([
+      'updateSecondaryTier',
+      'updateSecondaryRuneTier'
+    ]),
+    toggleClicked: function (val) {
+      if (val == null) {
+        this.secondaryPathClicked = !this.secondaryPathClicked
+      } else {
+        this.secondaryPathClicked = val
       }
     },
-    computed: {
-      ...mapGetters([
-        'getSecondaryPathColor',
-        'getSecondaryPathSelected',
-        'getSecondaryTiers',
-        'getTwoRunesSelected',
-        'getSecondaryNumRunes'
-      ])
-    },
-    methods: {
-      ...mapActions([
-        'updateSecondaryTier',
-        'updateSecondaryRuneTier'
-      ]),
-      toggleClicked: function (val) {
-        if (val == null) {
-          this.secondaryPathClicked = !this.secondaryPathClicked
-        } else {
-          this.secondaryPathClicked = val
-        }
-      },
-      selectSecondary: function (secondaryTier, index) {
-        this.updateSecondaryTier({runeTier: index, rune: secondaryTier})
-        if (this.getSecondaryNumRunes === 2) {
-          this.showRunes = false
-          this.updateSecondaryRuneTier({runes: this.getSecondaryTiers})
-        }
-      },
-      toggleShowRunes: function (val) {
-        console.log('you are toggleing the runes to true')
-        this.showRunes = true
+    selectSecondary: function (secondaryTier, index) {
+      this.updateSecondaryTier({runeTier: index, rune: secondaryTier})
+      if (this.getSecondaryNumRunes === 2) {
+        this.showRunes = false
+        this.updateSecondaryRuneTier({runes: this.getSecondaryTiers})
       }
+    },
+    toggleShowRunes: function (val) {
+      console.log('you are toggleing the runes to true')
+      this.showRunes = true
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -248,7 +248,6 @@
       flex-direction: column;
       justify-content: center;
           color: #a09b8c;
-      
 
       .secondary-rune-row {
         height: 33.3333%;
@@ -301,7 +300,6 @@
   }
 }
 
-
 .svg-inner {
   height: 46px;
   width: 46px;
@@ -341,7 +339,6 @@
   filter: blur(1px);
   animation: key-rotation 2s linear forwards infinite;
 }
-
 
 .svg-inner {
   height: 46px;

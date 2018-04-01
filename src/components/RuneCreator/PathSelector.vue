@@ -5,17 +5,17 @@
 </template>
 
 <script>
-  import PathCategory from './PathSelector/PathCategory'
-  import { mapGetters } from 'vuex'
-  export default {
-    name: 'PathSelector',
-    components: { PathCategory },
-    computed: {
-      ...mapGetters([
-        'getPaths'
-      ])
-    }
+import PathCategory from './PathSelector/PathCategory'
+import { mapGetters } from 'vuex'
+export default {
+  name: 'PathSelector',
+  components: { PathCategory },
+  computed: {
+    ...mapGetters([
+      'getPaths'
+    ])
   }
+}
 </script>
 
 <style lang="scss" scoped>

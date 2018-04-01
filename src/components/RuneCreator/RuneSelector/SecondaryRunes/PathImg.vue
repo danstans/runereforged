@@ -1,5 +1,5 @@
-<template>      
-  <div class="secondary-path-img" @click="toggleClicked"> 
+<template>
+  <div class="secondary-path-img" @click="toggleClicked">
     <img :src="getSecondaryPathSelected.pathSmall" alt="" v-if="getSecondaryPathSelected">
     <svg class="svg-circles">
       <linearGradient id="circle-gradient-secondary" x1="1" y1="0.6" x2="0" y2="0">
@@ -21,21 +21,21 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
-  export default {
-    name: 'PathImg',
-    computed: {
-      ...mapGetters([
-        'getSecondaryPathColor',
-        'getSecondaryPathSelected'
-      ])
-    },
-    methods: {
-      toggleClicked: function () {
-        this.$emit('toggleClicked')
-      }
+import { mapGetters } from 'vuex'
+export default {
+  name: 'PathImg',
+  computed: {
+    ...mapGetters([
+      'getSecondaryPathColor',
+      'getSecondaryPathSelected'
+    ])
+  },
+  methods: {
+    toggleClicked: function () {
+      this.$emit('toggleClicked')
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -86,6 +86,6 @@
     width: 86px;
     height: 86px;
     display: block;
-  } 
-} 
+  }
+}
 </style>

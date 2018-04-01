@@ -9,32 +9,32 @@
 </template>
 
 <script>
-  import { mapGetters, mapActions } from 'vuex'
-  export default {
-    name: 'KeystoneSelection',
-    computed: {
-      ...mapGetters([
-        'getPrimaryColor',
-        'getPossibleKeystones'
-      ])
-    },
-    data () {
-      return {
-        showHover: false
-      }
-    },
-    methods: {
-      ...mapActions([
-        'selectKeystone',
-        'updatePrimaryKeystone'
-      ]),
-      clickKeystone: function (keystone) {
-        this.selectKeystone({keystone: keystone})
-        this.updatePrimaryKeystone({keystone: keystone})
-        this.$emit('toggleClicked', false)
-      }
+import { mapGetters, mapActions } from 'vuex'
+export default {
+  name: 'KeystoneSelection',
+  computed: {
+    ...mapGetters([
+      'getPrimaryColor',
+      'getPossibleKeystones'
+    ])
+  },
+  data () {
+    return {
+      showHover: false
+    }
+  },
+  methods: {
+    ...mapActions([
+      'selectKeystone',
+      'updatePrimaryKeystone'
+    ]),
+    clickKeystone: function (keystone) {
+      this.selectKeystone({keystone: keystone})
+      this.updatePrimaryKeystone({keystone: keystone})
+      this.$emit('toggleClicked', false)
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>

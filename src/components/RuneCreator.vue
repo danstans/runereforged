@@ -39,7 +39,7 @@ export default {
     background: linear-gradient(0deg, #6c5021 0%, #ab8f57 100%);
     box-shadow: 0 0 80px #000;
     padding: 2px;
-    
+
     .black-background {
       width: 100%;
       height: 100%;

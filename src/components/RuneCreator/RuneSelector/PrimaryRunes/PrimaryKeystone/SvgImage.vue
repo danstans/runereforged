@@ -1,6 +1,6 @@
 <template>
   <div class="svg-img" @mouseover="showHover = true" @mouseout="showHover = false" @click="toggleClicked()">
-    <img class="keystone-img" :class="{'keystone-img-small': toggleSize}" :src="getKeystoneSelected.imgSrc" alt="" v-if="getKeystoneSelected">          
+    <img class="keystone-img" :class="{'keystone-img-small': toggleSize}" :src="getKeystoneSelected.imgSrc" alt="" v-if="getKeystoneSelected">
     <div class="svgs">
       <svg class="svg-hover-frame" viewBox="0 0 60 60" size="large" v-if="showHover">
         <linearGradient id="keystone-gradient-fade" x1="0" y1="0" x2="0" y2="0">
@@ -20,33 +20,33 @@
         </linearGradient>
         <path fill="none" stroke-linecap="round" stroke-width="2px" stroke="url(#gradient-white-transparent)" d="M 31 1 A 30 30 0 0 0 31 61"></path>
         <ellipse cx="50%" cy="1px" fill="#fff" rx="5" ry="2"></ellipse>
-      </svg>      
+      </svg>
     </div>
   </div>
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
-  export default {
-    name: 'SvgImage',
-    props: [ 'toggleSize' ],
-    computed: {
-      ...mapGetters([
-        'getPrimaryColor',
-        'getKeystoneSelected'
-      ])
-    },
-    data () {
-      return {
-        showHover: false
-      }
-    },
-    methods: {
-      toggleClicked: function () {
-        this.$emit('toggleClicked')
-      }
+import { mapGetters } from 'vuex'
+export default {
+  name: 'SvgImage',
+  props: [ 'toggleSize' ],
+  computed: {
+    ...mapGetters([
+      'getPrimaryColor',
+      'getKeystoneSelected'
+    ])
+  },
+  data () {
+    return {
+      showHover: false
+    }
+  },
+  methods: {
+    toggleClicked: function () {
+      this.$emit('toggleClicked')
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>

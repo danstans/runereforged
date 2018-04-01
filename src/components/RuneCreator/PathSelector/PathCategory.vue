@@ -17,67 +17,67 @@
       <div class="path-bottom">
         <div class="keystones">
           <div class="icon" id="icon-1" @click="clickKeystone(category.pathId, category.keystones, category.keystones[0], category.runeTiers)">
-            <img :src="category.keystones[0].imgSrc" alt="" :title="category.keystones[0].keystoneName">            
+            <img :src="category.keystones[0].imgSrc" alt="" :title="category.keystones[0].keystoneName">
           </div>
           <div class="icon" id="icon-2" @click="clickKeystone(category.pathId, category.keystones, category.keystones[1], category.runeTiers)">
-            <img :src="category.keystones[1].imgSrc" alt="" :title="category.keystones[1].keystoneName">            
+            <img :src="category.keystones[1].imgSrc" alt="" :title="category.keystones[1].keystoneName">
           </div>
           <div class="icon" id="icon-3" @click="clickKeystone(category.pathId, category.keystones, category.keystones[2], category.runeTiers)">
-            <img :src="category.keystones[2].imgSrc" alt="" :title="category.keystones">            
+            <img :src="category.keystones[2].imgSrc" alt="" :title="category.keystones">
           </div>
         </div>
       </div>
       <div class="path-footer">
         {{category.footer}}
       </div>
-    </div>     
+    </div>
   </div>
 </template>
 
 <script>
-  import { mapGetters, mapActions } from 'vuex'
-  export default {
-    name: 'PathCategory',
-    props: [ 'category', 'categoryIndex' ],
-    computed: {
-      ...mapGetters([
-        'getPaths'
-      ])
+import { mapGetters, mapActions } from 'vuex'
+export default {
+  name: 'PathCategory',
+  props: [ 'category', 'categoryIndex' ],
+  computed: {
+    ...mapGetters([
+      'getPaths'
+    ])
+  },
+  methods: {
+    ...mapActions([
+      'changePathSelected',
+      'changePrimaryPath',
+      'updatePossibleKeystones',
+      'selectKeystone',
+      'updatePossibleRunes',
+      'updatePossibleSecondaryPaths',
+      'updatePrimaryPath'
+    ]),
+    selectPath: function (pathId, keystones, runetiers) {
+      this.changePathSelected({pathVal: true})
+      this.changePrimaryPath({pathId: pathId})
+      this.updatePossibleKeystones({keystones: keystones})
+      this.updatePossibleRunes({runes: runetiers})
+      this.updatePossibleSecondaryPaths({primaryIndex: this.categoryIndex, paths: this.getPaths})
+      this.updatePrimaryPath({pathId: pathId})
     },
-    methods: {
-      ...mapActions([
-        'changePathSelected',
-        'changePrimaryPath',
-        'updatePossibleKeystones',
-        'selectKeystone',
-        'updatePossibleRunes',
-        'updatePossibleSecondaryPaths',
-        'updatePrimaryPath'
-      ]),
-      selectPath: function (pathId, keystones, runetiers) {
-        this.changePathSelected({pathVal: true})
-        this.changePrimaryPath({pathId: pathId})
-        this.updatePossibleKeystones({keystones: keystones})
-        this.updatePossibleRunes({runes: runetiers})
-        this.updatePossibleSecondaryPaths({primaryIndex: this.categoryIndex, paths: this.getPaths})
-        this.updatePrimaryPath({pathId: pathId})
-      },
-      clickKeystone: function (pathId, keystones, keystone, runetiers) {
-        this.changePathSelected({pathVal: true})
-        this.changePrimaryPath({pathId: pathId})
-        this.selectKeystone({keystone: keystone})
-        this.updatePossibleKeystones({keystone: keystones})
-        this.updatePossibleRunes({runes: runetiers})
-        this.updatePossibleSecondaryPaths({primaryIndex: this.categoryIndex, paths: this.getPaths})
-        this.updatePrimaryPath({pathId: pathId})
-      }
-    },
-    data () {
-      return {
-        mouseOver: false
-      }
+    clickKeystone: function (pathId, keystones, keystone, runetiers) {
+      this.changePathSelected({pathVal: true})
+      this.changePrimaryPath({pathId: pathId})
+      this.selectKeystone({keystone: keystone})
+      this.updatePossibleKeystones({keystone: keystones})
+      this.updatePossibleRunes({runes: runetiers})
+      this.updatePossibleSecondaryPaths({primaryIndex: this.categoryIndex, paths: this.getPaths})
+      this.updatePrimaryPath({pathId: pathId})
+    }
+  },
+  data () {
+    return {
+      mouseOver: false
     }
   }
+}
 </script>
 
 <style lang="scss">
@@ -119,7 +119,6 @@
               }
             }
           }
-
 
           .path-middle {
             height: 15%;
@@ -168,7 +167,7 @@
                 width: 50%;
               }
               #icon-2 {
-                width: 50%;          
+                width: 50%;
               }
 
               #icon-3 {
@@ -194,6 +193,6 @@
 }
 
 .ring {
-  background: url('http://d181w3hxxigzvh.cloudfront.net/wp-content/themes/rune_forge/imgs/rune-paths/ring.png');  
+  background: url('http://d181w3hxxigzvh.cloudfront.net/wp-content/themes/rune_forge/imgs/rune-paths/ring.png');
 }
 </style>

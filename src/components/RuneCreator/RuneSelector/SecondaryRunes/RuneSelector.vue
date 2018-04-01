@@ -7,31 +7,31 @@
 </template>
 
 <script>
-  import { mapGetters, mapActions } from 'vuex'
-  export default {
-    name: 'RuneSelector',
-    computed: {
-      ...mapGetters([
-        'getPossibleSecondaryPaths'
-      ])
-    },
-    methods: {
-      ...mapActions([
-        'updateSecondaryPath',
-        'updateSecondaryRunePath',
-        'resetSecondaryTiers',
-        'resetRuneTier'
-      ]),
-      selectSecondary: function (secondaryPath) {
-        // console.log(secondaryPath) Select Secondary
-        this.resetSecondaryTiers()
-        this.resetRuneTier()
-        this.updateSecondaryPath({secondaryRunes: secondaryPath})
-        this.updateSecondaryRunePath({secondaryRunes: secondaryPath})
-        this.$emit('toggleClicked', false)
-      }
+import { mapGetters, mapActions } from 'vuex'
+export default {
+  name: 'RuneSelector',
+  computed: {
+    ...mapGetters([
+      'getPossibleSecondaryPaths'
+    ])
+  },
+  methods: {
+    ...mapActions([
+      'updateSecondaryPath',
+      'updateSecondaryRunePath',
+      'resetSecondaryTiers',
+      'resetRuneTier'
+    ]),
+    selectSecondary: function (secondaryPath) {
+      // console.log(secondaryPath) Select Secondary
+      this.resetSecondaryTiers()
+      this.resetRuneTier()
+      this.updateSecondaryPath({secondaryRunes: secondaryPath})
+      this.updateSecondaryRunePath({secondaryRunes: secondaryPath})
+      this.$emit('toggleClicked', false)
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>

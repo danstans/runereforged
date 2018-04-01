@@ -27,34 +27,34 @@
 </template>
 
 <script>
-  import { mapGetters, mapActions } from 'vuex'
-  export default {
-    name: 'PrimaryPath',
-    computed: {
-      ...mapGetters([
-        'getPrimaryPathTitle',
-        'getPrimaryPathSubtitle',
-        'getPrimaryColor',
-        'getPrimaryRuneImg'
-      ])
-    },
-    methods: {
-      ...mapActions([
-        'resetState',
-        'resetKeystone',
-        'resetTier',
-        'resetSecondaryRunes',
-        'resetRunePath'
-      ]),
-      reset: function () {
-        this.resetState()
-        this.resetKeystone()
-        this.resetTier()
-        this.resetSecondaryRunes()
-        this.resetRunePath()
-      }
+import { mapGetters, mapActions } from 'vuex'
+export default {
+  name: 'PrimaryPath',
+  computed: {
+    ...mapGetters([
+      'getPrimaryPathTitle',
+      'getPrimaryPathSubtitle',
+      'getPrimaryColor',
+      'getPrimaryRuneImg'
+    ])
+  },
+  methods: {
+    ...mapActions([
+      'resetState',
+      'resetKeystone',
+      'resetTier',
+      'resetSecondaryRunes',
+      'resetRunePath'
+    ]),
+    reset: function () {
+      this.resetState()
+      this.resetKeystone()
+      this.resetTier()
+      this.resetSecondaryRunes()
+      this.resetRunePath()
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -74,7 +74,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+
     .svg-circles {
       position: absolute;
       margin: -32px;
@@ -99,7 +99,7 @@
         transform: rotate(240deg) translateY(6%);
         transform-origin: 50% 50%;
       }
-    }   
+    }
 
     .svg-cup {
       position: absolute;
@@ -108,7 +108,7 @@
       width: 86px;
       height: 86px;
       display: block;
-    } 
+    }
 
     >img {
       max-width: 36px;

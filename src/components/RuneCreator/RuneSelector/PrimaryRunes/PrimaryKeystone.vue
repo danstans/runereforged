@@ -8,35 +8,35 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
-  import SvgImage from './PrimaryKeystone/SvgImage'
-  import KeystoneSelection from './PrimaryKeystone/KeystoneSelection'
-  import KeystoneSelected from './PrimaryKeystone/KeystoneSelected'
-  import SvgBorder from './PrimaryKeystone/SvgBorder'
-  export default {
-    name: 'PrimaryKeystone',
-    computed: {
-      ...mapGetters([
-        'getKeystoneSelected',
-        'getPrimaryColor'
-      ])
-    },
-    components: { SvgBorder, SvgImage, KeystoneSelection, KeystoneSelected },
-    data () {
-      return {
-        svgClicked: false
-      }
-    },
-    methods: {
-      toggleClicked: function (val) {
-        if (val == null) {
-          this.svgClicked = !this.svgClicked
-        } else {
-          this.svgClicked = val
-        }
+import { mapGetters } from 'vuex'
+import SvgImage from './PrimaryKeystone/SvgImage'
+import KeystoneSelection from './PrimaryKeystone/KeystoneSelection'
+import KeystoneSelected from './PrimaryKeystone/KeystoneSelected'
+import SvgBorder from './PrimaryKeystone/SvgBorder'
+export default {
+  name: 'PrimaryKeystone',
+  computed: {
+    ...mapGetters([
+      'getKeystoneSelected',
+      'getPrimaryColor'
+    ])
+  },
+  components: { SvgBorder, SvgImage, KeystoneSelection, KeystoneSelected },
+  data () {
+    return {
+      svgClicked: false
+    }
+  },
+  methods: {
+    toggleClicked: function (val) {
+      if (val == null) {
+        this.svgClicked = !this.svgClicked
+      } else {
+        this.svgClicked = val
       }
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>
