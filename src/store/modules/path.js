@@ -76,36 +76,36 @@ const actions = {
         context.commit('MUTATE_PRIMARY_PATH_TITLE', 'Precision')
         context.commit('MUTATE_PRIMARY_PATH_SUBTITLE', 'Improved attacks and sustained damage')
         context.commit('MUTATE_PRIMARY_COLOR', '#c8aa6e')
-        context.commit('MUTATE_PRIMARY_RUNE_IMG', '/static/precision/precision-small.png')
-        context.commit('MUTATE_BACKGROUND_IMG', '/static/precision/environment.jpg')
+        context.commit('MUTATE_PRIMARY_RUNE_IMG', 'static/precision/precision-small.png')
+        context.commit('MUTATE_BACKGROUND_IMG', 'static/precision/environment.jpg')
         break
       case 8100:
         context.commit('MUTATE_PRIMARY_PATH_TITLE', 'Domination')
         context.commit('MUTATE_PRIMARY_PATH_SUBTITLE', 'Burst damage and target access')
         context.commit('MUTATE_PRIMARY_COLOR', '#ca3e3f')
-        context.commit('MUTATE_PRIMARY_RUNE_IMG', '/static/domination/domination-small.png')
-        context.commit('MUTATE_BACKGROUND_IMG', '/static/domination/environment.jpg')
+        context.commit('MUTATE_PRIMARY_RUNE_IMG', 'static/domination/domination-small.png')
+        context.commit('MUTATE_BACKGROUND_IMG', 'static/domination/environment.jpg')
         break
       case 8200:
         context.commit('MUTATE_PRIMARY_PATH_TITLE', 'Sorcery')
         context.commit('MUTATE_PRIMARY_PATH_SUBTITLE', 'Empowered abilities and resource manipulation')
         context.commit('MUTATE_PRIMARY_COLOR', '#9faafc')
-        context.commit('MUTATE_PRIMARY_RUNE_IMG', '/static/sorcery/sorcery-small.png')
-        context.commit('MUTATE_BACKGROUND_IMG', '/static/sorcery/environment.jpg')
+        context.commit('MUTATE_PRIMARY_RUNE_IMG', 'static/sorcery/sorcery-small.png')
+        context.commit('MUTATE_BACKGROUND_IMG', 'static/sorcery/environment.jpg')
         break
       case 8300:
         context.commit('MUTATE_PRIMARY_PATH_TITLE', 'Inspiration')
         context.commit('MUTATE_PRIMARY_PATH_SUBTITLE', 'Creative tools and rule bending')
         context.commit('MUTATE_PRIMARY_COLOR', '#49aab9')
-        context.commit('MUTATE_PRIMARY_RUNE_IMG', '/static/inspiration/inspiration-small.png')
-        context.commit('MUTATE_BACKGROUND_IMG', '/static/inspiration/environment.jpg')
+        context.commit('MUTATE_PRIMARY_RUNE_IMG', 'static/inspiration/inspiration-small.png')
+        context.commit('MUTATE_BACKGROUND_IMG', 'static/inspiration/environment.jpg')
         break
       case 8400:
         context.commit('MUTATE_PRIMARY_PATH_TITLE', 'Resolve')
         context.commit('MUTATE_PRIMARY_PATH_SUBTITLE', 'Durability and crowd control')
         context.commit('MUTATE_PRIMARY_COLOR', '#a1d586')
-        context.commit('MUTATE_PRIMARY_RUNE_IMG', '/static/resolve/resolve-small.png')
-        context.commit('MUTATE_BACKGROUND_IMG', '/static/resolve/environment.jpg')
+        context.commit('MUTATE_PRIMARY_RUNE_IMG', 'static/resolve/resolve-small.png')
+        context.commit('MUTATE_BACKGROUND_IMG', 'static/resolve/environment.jpg')
         break
     }
   },
