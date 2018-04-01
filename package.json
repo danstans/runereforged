@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && mv ./dist ./docs",
+    "build": "rm -rf docs && vue-cli-service build && mv ./dist ./docs",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -44,9 +44,6 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
   "lint-staged": {
     "*.js": [
       "vue-cli-service lint",
