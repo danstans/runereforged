@@ -6,26 +6,26 @@
 </template>
 
 <script>
-import RuneCreator from './components/RuneCreator'
-import ChampList from './components/ChampList'
+import RuneCreator from "./components/RuneCreator";
+import ChampList from "./components/ChampList";
 export default {
-  name: 'app',
+  name: "app",
   components: { RuneCreator, ChampList }
-}
+};
 </script>
 
 <style>
-@import url('https://necolas.github.io/normalize.css/7.0.0/normalize.css');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://necolas.github.io/normalize.css/7.0.0/normalize.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @font-face {
   font-family: Beaufort;
-  src: url('/RunesReforgedTool/static/Beaufort.ttf');
+  src: url("/RunesReforgedTool/static/Beaufort.ttf");
 }
 
 @font-face {
-    font-family: Beaufort;
-    src: url('/RunesReforgedTool/static/Beaufort-Bold.ttf');
-    font-weight: bold;
+  font-family: Beaufort;
+  src: url("/static/Beaufort-Bold.ttf");
+  font-weight: bold;
 }
 
 #app {
@@ -33,7 +33,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-image: url('https://d181w3hxxigzvh.cloudfront.net/wp-content/themes/rune_forge/imgs/magic-repeater-sm.jpg');
+  background-image: url("https://d181w3hxxigzvh.cloudfront.net/wp-content/themes/rune_forge/imgs/magic-repeater-sm.jpg");
   color: white;
   height: 100vh;
   width: 100vw;
