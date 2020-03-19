@@ -19,7 +19,7 @@ export default {
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @font-face {
   font-family: Beaufort;
-  src: url("/RunesReforgedTool/static/Beaufort.ttf");
+  src: url("/static/Beaufort.ttf");
 }
 
 @font-face {
