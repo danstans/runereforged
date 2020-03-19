@@ -35,53 +35,53 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters, mapActions } from 'vuex'
 export default {
-  name: "PathCategory",
-  props: ["category", "categoryIndex"],
+  name: 'PathCategory',
+  props: ['category', 'categoryIndex'],
   computed: {
-    ...mapGetters(["getPaths"])
+    ...mapGetters(['getPaths'])
   },
   methods: {
     ...mapActions([
-      "changePathSelected",
-      "changePrimaryPath",
-      "updatePossibleKeystones",
-      "selectKeystone",
-      "updatePossibleRunes",
-      "updatePossibleSecondaryPaths",
-      "updatePrimaryPath"
+      'changePathSelected',
+      'changePrimaryPath',
+      'updatePossibleKeystones',
+      'selectKeystone',
+      'updatePossibleRunes',
+      'updatePossibleSecondaryPaths',
+      'updatePrimaryPath'
     ]),
-    selectPath: function(pathId, keystones, runetiers) {
-      this.changePathSelected({ pathVal: true });
-      this.changePrimaryPath({ pathId: pathId });
-      this.updatePossibleKeystones({ keystones: keystones });
-      this.updatePossibleRunes({ runes: runetiers });
+    selectPath: function (pathId, keystones, runetiers) {
+      this.changePathSelected({ pathVal: true })
+      this.changePrimaryPath({ pathId: pathId })
+      this.updatePossibleKeystones({ keystones: keystones })
+      this.updatePossibleRunes({ runes: runetiers })
       this.updatePossibleSecondaryPaths({
         primaryIndex: this.categoryIndex,
         paths: this.getPaths
-      });
-      this.updatePrimaryPath({ pathId: pathId });
+      })
+      this.updatePrimaryPath({ pathId: pathId })
     },
-    clickKeystone: function(pathId, keystones, keystone, runetiers) {
-      this.changePathSelected({ pathVal: true });
-      this.changePrimaryPath({ pathId: pathId });
-      this.selectKeystone({ keystone: keystone });
-      this.updatePossibleKeystones({ keystone: keystones });
-      this.updatePossibleRunes({ runes: runetiers });
+    clickKeystone: function (pathId, keystones, keystone, runetiers) {
+      this.changePathSelected({ pathVal: true })
+      this.changePrimaryPath({ pathId: pathId })
+      this.selectKeystone({ keystone: keystone })
+      this.updatePossibleKeystones({ keystone: keystones })
+      this.updatePossibleRunes({ runes: runetiers })
       this.updatePossibleSecondaryPaths({
         primaryIndex: this.categoryIndex,
         paths: this.getPaths
-      });
-      this.updatePrimaryPath({ pathId: pathId });
+      })
+      this.updatePrimaryPath({ pathId: pathId })
     }
   },
-  data() {
+  data () {
     return {
       mouseOver: false
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="scss">

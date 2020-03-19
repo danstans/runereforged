@@ -17,13 +17,13 @@
 </template>
 
 <script>
-import { mapGetters } from "vuex";
+import { mapGetters } from 'vuex'
 export default {
-  name: "SvgBorder",
+  name: 'SvgBorder',
   computed: {
-    ...mapGetters(["getPrimaryColor"])
+    ...mapGetters(['getPrimaryColor'])
   }
-};
+}
 </script>
 
 <style scoped>

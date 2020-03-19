@@ -35,32 +35,32 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
-import _ from "lodash";
+import { mapGetters, mapActions } from 'vuex'
+import _ from 'lodash'
 export default {
-  name: "ChampList",
+  name: 'ChampList',
   computed: {
-    ...mapGetters(["getRunePath", "getChampionList"]),
-    sortedChampList: function() {
+    ...mapGetters(['getRunePath', 'getChampionList']),
+    sortedChampList: function () {
       // return this.getChampionList
-      return _.orderBy(this.getChampionList, "runesWinRate", "desc");
+      return _.orderBy(this.getChampionList, 'runesWinRate', 'desc')
     }
   },
   methods: {
-    ...mapActions(["updateChampList"])
+    ...mapActions(['updateChampList'])
   },
   watch: {
     getRunePath: {
-      handler: function(after, before) {
+      handler: function (after, before) {
         if (after) {
-          this.updateChampList();
+          this.updateChampList()
         } else {
-          this.updateChampList("reset");
+          this.updateChampList('reset')
         }
       }
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
