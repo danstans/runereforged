@@ -13,11 +13,11 @@
         </div>
         <div class="champ-meta">
           <div class="lane-meta">
-            <img src="http://opgg-static.akamaized.net/images/site/champion/position-sup-over@2x.png" alt="" v-if="champ.role == 'DUO_SUPPORT'">
-            <img src="http://opgg-static.akamaized.net/images/site/champion/position-adc-over@2x.png" alt="" v-else-if="champ.role == 'DUO_CARRY'">
-            <img src="http://opgg-static.akamaized.net/images/site/champion/position-top-over@2x.png" alt="" v-else-if="champ.role == 'TOP'">
-            <img src="http://opgg-static.akamaized.net/images/site/champion/position-jun-over@2x.png" alt="" v-else-if="champ.role == 'JUNGLE'">
-            <img src="http://opgg-static.akamaized.net/images/site/champion/position-mid-over@2x.png" alt="" v-else-if="champ.role == 'MIDDLE'">
+            <img src="https://opgg-static.akamaized.net/images/site/champion/position-sup-over@2x.png" alt="" v-if="champ.role == 'DUO_SUPPORT'">
+            <img src="https://opgg-static.akamaized.net/images/site/champion/position-adc-over@2x.png" alt="" v-else-if="champ.role == 'DUO_CARRY'">
+            <img src="https://opgg-static.akamaized.net/images/site/champion/position-top-over@2x.png" alt="" v-else-if="champ.role == 'TOP'">
+            <img src="https://opgg-static.akamaized.net/images/site/champion/position-jun-over@2x.png" alt="" v-else-if="champ.role == 'JUNGLE'">
+            <img src="https://opgg-static.akamaized.net/images/site/champion/position-mid-over@2x.png" alt="" v-else-if="champ.role == 'MIDDLE'">
           </div>
           <div class="champ-winrate">
             <span>Win Rate</span>
@@ -35,37 +35,32 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
-import _ from 'lodash'
+import { mapGetters, mapActions } from "vuex";
+import _ from "lodash";
 export default {
-  name: 'ChampList',
+  name: "ChampList",
   computed: {
-    ...mapGetters([
-      'getRunePath',
-      'getChampionList'
-    ]),
-    sortedChampList: function () {
+    ...mapGetters(["getRunePath", "getChampionList"]),
+    sortedChampList: function() {
       // return this.getChampionList
-      return _.orderBy(this.getChampionList, 'runesWinRate', 'desc')
+      return _.orderBy(this.getChampionList, "runesWinRate", "desc");
     }
   },
   methods: {
-    ...mapActions([
-      'updateChampList'
-    ])
+    ...mapActions(["updateChampList"])
   },
   watch: {
-    'getRunePath': {
-      handler: function (after, before) {
+    getRunePath: {
+      handler: function(after, before) {
         if (after) {
-          this.updateChampList()
+          this.updateChampList();
         } else {
-          this.updateChampList('reset')
+          this.updateChampList("reset");
         }
       }
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -117,7 +112,6 @@ export default {
       }
 
       .champ-meta {
-
         width: 130px;
         height: 100%;
         display: flex;
@@ -130,12 +124,12 @@ export default {
           justify-content: space-between;
           height: 48px;
 
-          >span {
+          > span {
             font-size: 1rem;
             font-weight: bold;
           }
 
-          >h1 {
+          > h1 {
             text-align: center;
             font-size: 1.1rem;
           }
@@ -145,7 +139,7 @@ export default {
           display: flex;
           flex-direction: column;
           justify-content: space-around;
-          >img {
+          > img {
             max-height: 48px;
             max-width: 48px;
           }
@@ -162,7 +156,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
 }
 </style>

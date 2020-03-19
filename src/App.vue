@@ -33,7 +33,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-image: url('http://d181w3hxxigzvh.cloudfront.net/wp-content/themes/rune_forge/imgs/magic-repeater-sm.jpg');
+  background-image: url('https://d181w3hxxigzvh.cloudfront.net/wp-content/themes/rune_forge/imgs/magic-repeater-sm.jpg');
   color: white;
   height: 100vh;
   width: 100vw;

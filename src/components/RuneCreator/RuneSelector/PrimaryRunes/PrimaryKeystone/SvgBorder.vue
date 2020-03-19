@@ -17,15 +17,13 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from "vuex";
 export default {
-  name: 'SvgBorder',
+  name: "SvgBorder",
   computed: {
-    ...mapGetters([
-      'getPrimaryColor'
-    ])
+    ...mapGetters(["getPrimaryColor"])
   }
-}
+};
 </script>
 
 <style scoped>
@@ -43,8 +41,8 @@ export default {
   width: 286px;
   height: 9px;
   bottom: 0;
-  -webkit-transform: scale(1,-1);
-  -ms-transform: scale(1,-1);
-  transform: scale(1,-1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
 }
 </style>
