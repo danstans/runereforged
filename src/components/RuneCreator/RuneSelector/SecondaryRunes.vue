@@ -166,10 +166,10 @@ export default {
       }
     },
     selectSecondary: function (secondaryTier, index) {
-      this.updateSecondaryTier({runeTier: index, rune: secondaryTier})
+      this.updateSecondaryTier({ runeTier: index, rune: secondaryTier })
       if (this.getSecondaryNumRunes === 2) {
         this.showRunes = false
-        this.updateSecondaryRuneTier({runes: this.getSecondaryTiers})
+        this.updateSecondaryRuneTier({ runes: this.getSecondaryTiers })
       }
     },
     toggleShowRunes: function (val) {

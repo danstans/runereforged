@@ -55,21 +55,21 @@ export default {
       'updatePrimaryPath'
     ]),
     selectPath: function (pathId, keystones, runetiers) {
-      this.changePathSelected({pathVal: true})
-      this.changePrimaryPath({pathId: pathId})
-      this.updatePossibleKeystones({keystones: keystones})
-      this.updatePossibleRunes({runes: runetiers})
-      this.updatePossibleSecondaryPaths({primaryIndex: this.categoryIndex, paths: this.getPaths})
-      this.updatePrimaryPath({pathId: pathId})
+      this.changePathSelected({ pathVal: true })
+      this.changePrimaryPath({ pathId: pathId })
+      this.updatePossibleKeystones({ keystones: keystones })
+      this.updatePossibleRunes({ runes: runetiers })
+      this.updatePossibleSecondaryPaths({ primaryIndex: this.categoryIndex, paths: this.getPaths })
+      this.updatePrimaryPath({ pathId: pathId })
     },
     clickKeystone: function (pathId, keystones, keystone, runetiers) {
-      this.changePathSelected({pathVal: true})
-      this.changePrimaryPath({pathId: pathId})
-      this.selectKeystone({keystone: keystone})
-      this.updatePossibleKeystones({keystone: keystones})
-      this.updatePossibleRunes({runes: runetiers})
-      this.updatePossibleSecondaryPaths({primaryIndex: this.categoryIndex, paths: this.getPaths})
-      this.updatePrimaryPath({pathId: pathId})
+      this.changePathSelected({ pathVal: true })
+      this.changePrimaryPath({ pathId: pathId })
+      this.selectKeystone({ keystone: keystone })
+      this.updatePossibleKeystones({ keystone: keystones })
+      this.updatePossibleRunes({ runes: runetiers })
+      this.updatePossibleSecondaryPaths({ primaryIndex: this.categoryIndex, paths: this.getPaths })
+      this.updatePrimaryPath({ pathId: pathId })
     }
   },
   data () {

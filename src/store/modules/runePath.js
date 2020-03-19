@@ -120,7 +120,7 @@ const actions = {
     })
     context.commit('CHECK_PATH_COMPLETE')
   },
-  updateChampList: function ({commit, state}, val) {
+  updateChampList: function ({ commit, state }, val) {
     if (val === 'reset') {
       commit('SET_CHAMP_LIST', null)
     } else {
